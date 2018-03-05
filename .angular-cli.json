@@ -19,9 +19,27 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "../node_modules/owl.carousel/dist/assets/owl.carousel.css",
+        "../node_modules/lightgallery/dist/css/lightgallery.css",
+        "../node_modules/animate.css/animate.css",
+        "../node_modules/font-awesome/css/font-awesome.css",
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/owl.carousel/dist/owl.carousel.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+ 
+        "../node_modules/lightgallery/dist/js/lightgallery.js",
+        "../node_modules/lg-pager/dist/lg-pager.js",
+        "../node_modules/lg-autoplay/dist/lg-autoplay.js",
+        "../node_modules/lg-share/dist/lg-share.js",
+        "../node_modules/lg-fullscreen/dist/lg-fullscreen.min.js",
+        "../node_modules/lg-zoom/dist/lg-zoom.js",
+        "../node_modules/lg-hash/dist/lg-hash.js",
+        "../node_modules/wow.js/dist/wow.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
