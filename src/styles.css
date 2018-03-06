@@ -331,7 +331,7 @@ NAVIGATION STYLE
     background-repeat: no-repeat;
     background-position: 79% 0px;
     margin-top: -17%;
-    padding-top: 25%;
+    padding-top: 20%;
 }
 .home2-second-bg {
     background-image: url(assets/images/bg/home2-second-bg.png);
@@ -471,7 +471,7 @@ img {
 }
 .intro-section .intro-item:hover {
     box-shadow: 1.5px 2.598px 25px 0px rgba( 124, 134, 224, 0.1);
-    background: #fff;
+    background: #e1f2fd;
     border-radius: 6px;
 }
 .intro-section .intro-item img {
@@ -1297,7 +1297,6 @@ img {
         }
 
         .sec-testimonial .media .media-body h6 {
-            text-transform: uppercase;
             margin-top: 13px;
             font-size: 14px;
             line-height: 30px;
@@ -1388,41 +1387,6 @@ img {
 
 #owl-testimonial .owl-item {
     padding: 1rem;
-}
-
-/* ==================================================================
-   14.0 fact-section item styles
-================================================================== */
-.fact-section {
-    position: relative;
-}
-.bg-fact {
-    background-image: url('assets/images/counter/bg-factor.png');
-    background-size: cover;
-    background-position: center;
-}
-.fact-section .fact-details {
-    color: #ffffff;
-}
-.fact-section .fact-details i {
-    font-size: 35px;
-    margin-bottom: 30px;
-}
-.fact-section .fact-details .fact-info {
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 13px;
-    color: #ffffff;
-} 
-.fact-section .fact-details .fact-count {
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 0;
-    color: #ffffff;
-}
-
-.default-padding {
-    padding: 100px 0;
 }
 
 
@@ -1556,7 +1520,39 @@ img {
 
     
 
+    @media(min-width:1367px) {
 
+        .home2-first-bg {
+            background-size: 100% 105%;
+            margin-top: -7%;
+            padding-top: 12%;
+        }
+        .bg-second-block {
+            background-size: 100% 100%;
+            background-position: 100% top;
+        }
+.width-75{
+    width:75% !important;
+}
+
+
+    }
+
+@media(max-width:1198px){
+
+    .navbar-align .navbar-nav > li > a {
+        padding: 2.5rem 1rem;
+}
+
+.header-top-right a {
+    margin-left: 25px;
+    
+}
+
+.banner .heading {
+    font-size: 48px;
+   }
+}
 
 @media(min-width:1199px) {
 
