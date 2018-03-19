@@ -2081,8 +2081,8 @@ button:focus {
 	background-color: #F4F4F4;
 }*/
 
-.featured-details span{
-    padding-right:10px;
+.featured-details span {
+    padding-right: 10px;
 }
 
 .section-padding {
@@ -2286,6 +2286,7 @@ button:focus {
 
 .margin-bottom-20 {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .section-padding-sm {
@@ -2309,13 +2310,22 @@ button:focus {
         color: #00a2ff;
     }
 
-#panel, #flip {
+#morekeyfeatureDetails, #morekeyfeature, #moreBenefits, #moreBenefitsDetails {
     margin-top: 5rem;
     padding: 5px;
     text-align: center;
 }
 
-#panel {
+#morekeyfeatureDetails, #moreBenefitsdetails {
     padding: 50px;
     display: none;
+}
+
+
+.margin-top{
+    margin-top:5rem;
+}
+
+  .featured-details p span i {
+    color: #78b8ec;
 }

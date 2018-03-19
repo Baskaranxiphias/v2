@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 declare var skrollr: any;
+import * as $ from 'jquery';
+
 @Component({
     selector: 'app-about',
     templateUrl: './about.component.html',
@@ -27,8 +29,12 @@ export class AboutComponent implements OnInit {
         });
 
 
-        $("#flip").click(function () {
-            $("#panel").slideToggle("slow");
+        $("#moreBenefits").click(function () {
+            $("#moreBenefitsdetails").slideToggle("slow");
+        });
+
+        $("#morekeyfeature").click(function () {
+            $("#morekeyfeatureDetails").slideToggle("slow");
         });
     }
 
