@@ -39,7 +39,8 @@
         "../node_modules/lg-fullscreen/dist/lg-fullscreen.min.js",
         "../node_modules/lg-zoom/dist/lg-zoom.js",
         "../node_modules/lg-hash/dist/lg-hash.js",
-        "../node_modules/wow.js/dist/wow.js"
+        "../node_modules/wow.js/dist/wow.js",
+        "../node_modules/skrollr/dist/skrollr.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
