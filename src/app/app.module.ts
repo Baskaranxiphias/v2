@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 
-import {AppRoutingModule}from'./app.routes'
+import {AppRoutingModule}from'./app.routes';
+import { WhyAtsiComponent } from './why-atsi/why-atsi.component'
 
 @NgModule({
     declarations: [
         AppComponent,
         HomeComponent,
-        AboutComponent
+        AboutComponent,
+        WhyAtsiComponent
     ],
     imports: [
         BrowserModule,

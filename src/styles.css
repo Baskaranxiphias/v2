@@ -507,6 +507,29 @@ button:focus {
         transition: 0.3s;
     }
 
+        /*.intro-section .intro-item.red:hover {
+            background-image: url('assets/images/intro/payment-method-white.svg');
+            background-repeat: no-repeat;
+            background-size: 99% 19%;
+            -webkit-box-shadow: 1.5px 2.598px 25px 0px rgba( 124, 134, 224, 0.1);
+            box-shadow: 1.5px 2.598px 25px 0px rgba( 124, 134, 224, 0.1);
+            background-color: #f44336;
+            border-radius: 6px;
+            color: #fff;
+            -webkit-transition: background-color 2s ease-out;
+            transition: background-color 2s ease-out;
+            background-position-y: 13.1%;
+        }
+
+            .intro-section .intro-item.red:hover img {
+                display: none;
+            }
+
+            .intro-section .intro-item.red:hover .title {
+                margin-top: 3rem;
+            }*/
+
+
         .intro-section .intro-item.red:hover {
             box-shadow: 1.5px 2.598px 25px 0px rgba( 124, 134, 224, 0.1);
             /* background: #88dcf6; */
@@ -522,7 +545,7 @@ button:focus {
         .intro-section .intro-item.yellow:hover {
             box-shadow: 1.5px 2.598px 25px 0px rgba( 124, 134, 224, 0.1);
             /* background: #88dcf6; */
-            background-color: #FFEB3B;
+            background-color: #d0ba00;
             border-radius: 6px;
             color: #fff;
             -webkit-transition: background-color 2s ease-out;
@@ -754,13 +777,56 @@ button:focus {
     --bg-color: #ffd861;
     --bg-color-light: #ffeeba;
     --text-color-hover: #4C5656;
-    /* --box-shadow-color: rgba(255, 215, 97, 0.48); */
+    --box-shadow-color: #ffd861;
 }
 
 .academics {
-    --bg-color: #6f4e77;
-    --bg-color-light: #ffeeba;
+    --bg-color: #c3c3c3;
+    --bg-color-light: #fff;
     --text-color-hover: #4C5656;
+    --box-shadow-color: rgba(195, 195, 195, 0.2);
+}
+
+.admission {
+    --bg-color: #84f3e3;
+    --bg-color-light: #fff;
+    --text-color-hover: #4C5656;
+    --box-shadow-color: rgba(220, 233, 255, 0.48);
+}
+
+.fee {
+    --bg-color: #ceb953;
+    --bg-color-light: #fff;
+    --text-color-hover: #4C5656;
+    --box-shadow-color: rgba(220, 233, 255, 0.48);
+}
+
+.payroll {
+    --bg-color: #97a6f5;
+    --bg-color-light: #fff;
+    --text-color-hover: #4C5656;
+    --box-shadow-color: rgba(220, 233, 255, 0.48);
+}
+
+.examination {
+    --bg-color: #819c95;
+    --bg-color-light: #fff;
+    --text-color-hover: #4C5656;
+    --box-shadow-color: rgba(220, 233, 255, 0.48);
+}
+
+.hrms {
+    --bg-color: #f9c085;
+    --bg-color-light: #fff;
+    --text-color-hover: #4C5656;
+    --box-shadow-color: rgba(220, 233, 255, 0.48);
+}
+
+.transport {
+    --bg-color: #ffa8e8;
+    --bg-color-light: #fff;
+    --text-color-hover: #4C5656;
+    --box-shadow-color: rgba(220, 233, 255, 0.48);
 }
 
 #benefits .card {
@@ -811,6 +877,19 @@ button:focus {
         z-index: 1000;
         transition: color 0.3s ease-out;
     }
+
+
+.modules .overlay {
+    width: 118px;
+    position: absolute;
+    height: 118px;
+    border-radius: 50%;
+    background: var(--bg-color);
+    top: 10%;
+    left: 27% !important;
+    z-index: 0;
+    transition: transform 0.3s ease-out;
+}
 
 #benefits .circle {
     width: 131px;
@@ -954,9 +1033,12 @@ button:focus {
 
 
 .width-44 {
-    width: 44px;
+    width: 44px !important;
 }
 
+.width-66 {
+    width: 66px !important;
+}
 
 #screenshots {
     padding-bottom: 2rem;
@@ -1022,6 +1104,10 @@ button:focus {
             margin-right: 5px;
         }
 
+.padding-top-0 {
+    padding-top: 0px !important;
+}
+
 .section-title .title {
     font-family: 'Roboto-thin',sans-serif;
     font-size: 30px;
@@ -1029,6 +1115,7 @@ button:focus {
     font-weight: 500;
     margin-bottom: 49px;
     margin-top: 0;
+    color: #0268bf;
 }
 
     .section-title .title:after {
@@ -1978,6 +2065,7 @@ button:focus {
     font-weight: 500;
     margin-bottom: 49px;
     margin-top: 20px;
+    color: #fff;
 }
 
     .about .section-title .title:after {
@@ -2322,10 +2410,10 @@ button:focus {
 }
 
 
-.margin-top{
-    margin-top:5rem;
+.margin-top {
+    margin-top: 5rem;
 }
 
-  .featured-details p span i {
+.featured-details p span i {
     color: #78b8ec;
 }
