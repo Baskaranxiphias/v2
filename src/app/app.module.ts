@@ -8,14 +8,16 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 
 import {AppRoutingModule}from'./app.routes';
-import { WhyAtsiComponent } from './why-atsi/why-atsi.component'
+import { WhyAtsiComponent } from './why-atsi/why-atsi.component';
+import { PackageComponent } from './package/package.component'
 
 @NgModule({
     declarations: [
         AppComponent,
         HomeComponent,
         AboutComponent,
-        WhyAtsiComponent
+        WhyAtsiComponent,
+        PackageComponent
     ],
     imports: [
         BrowserModule,

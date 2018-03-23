@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+declare var AOS: any;
+import * as $ from 'jquery';
 @Component({
   selector: 'app-why-atsi',
   templateUrl: './why-atsi.component.html',
@@ -10,6 +11,18 @@ export class WhyAtsiComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+
+    
+
+    $("#moreBenefits").click(function () {
+        $("#moreBenefitsdetails").slideToggle("slow");
+    });
+
+    $("#morekeyfeature").click(function () {
+        $("#morekeyfeatureDetails").slideToggle("slow");
+    });
+
 
     (function() {
 
@@ -101,7 +114,7 @@ export class WhyAtsiComponent implements OnInit {
               ctx.fill();
           };
       }
-  
+      AOS.init({offset:200,duration:1500,disable:"mobile"})
   })();
 
   }

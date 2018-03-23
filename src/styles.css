@@ -2556,3 +2556,77 @@ button:focus {
     top: 0;
     z-index: -1;
 }
+
+.icon-xxl {
+    width: 12rem;
+    height: 12rem;
+    line-height: 6.5rem;
+    font-size: 2.275rem;
+}
+.shadow-box {
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0,.1), 0 2px 6px rgba(0,0,0,.03);
+    box-shadow: 0 0 1px rgba(0,0,0,.1), 0 2px 6px rgba(0,0,0,.03);
+}
+.bg-1 {
+    background-color: #fff;
+}
+.image-background {
+    position: relative;
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.rounded-circle {
+    border-radius: 50%!important;
+}
+
+.mt-5, .my-5 {
+    margin-top: 3rem!important;
+}
+.image-background.contain {
+    background-size: contain;
+}
+
+.mt-6 {
+    margin-top: 6rem!important;
+}
+
+.mt-4, .my-4 {
+    margin-top: 1.5rem!important;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+.d-flex {
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+
+.flex-wrap {
+    -ms-flex-wrap: wrap!important;
+    flex-wrap: wrap!important;
+}
+.justify-content-around {
+    -ms-flex-pack: distribute!important;
+    justify-content: space-around!important;
+}
+
+.m-t-5{
+    margin-top:5rem;
+}
+
+.m-b-10{
+    margin-bottom:10rem;
+}
+
+.btm-txt{
+    position: absolute;
+    bottom: -50%;
+    left: 20%;
+    right: 0;
+    margin: auto;
+    font-size: 1.8rem;
+}

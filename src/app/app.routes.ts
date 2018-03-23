@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import {WhyAtsiComponent}from'./why-atsi/why-atsi.component';
-
+import {PackageComponent}from'./package/package.component';
 export const routes: Routes = [
     {
         path: '',
@@ -20,6 +20,11 @@ export const routes: Routes = [
     {
         path: 'whyAtsi',
         component: WhyAtsiComponent,
+    },
+
+    {
+        path: 'package',
+        component: PackageComponent,
     }
 ];
 
