@@ -9,7 +9,10 @@ import { AboutComponent } from './about/about.component';
 
 import {AppRoutingModule}from'./app.routes';
 import { WhyAtsiComponent } from './why-atsi/why-atsi.component';
-import { PackageComponent } from './package/package.component'
+import { PackageComponent } from './package/package.component';
+import { ClientsComponent } from './clients/clients.component';
+import { ContactComponent } from './contact/contact.component';
+import { TestimonialComponent } from './testimonial/testimonial.component'
 
 @NgModule({
     declarations: [
@@ -17,7 +20,10 @@ import { PackageComponent } from './package/package.component'
         HomeComponent,
         AboutComponent,
         WhyAtsiComponent,
-        PackageComponent
+        PackageComponent,
+        ClientsComponent,
+        ContactComponent,
+        TestimonialComponent
     ],
     imports: [
         BrowserModule,

@@ -2630,3 +2630,93 @@ button:focus {
     margin: auto;
     font-size: 1.8rem;
 }
+
+
+.primary-contact p {
+    font-size: 13px;
+}
+.primary-contact p i {
+    color: #4e8ec8;
+    font-size: 16px;
+    padding-right: 10px;
+}
+.primary-contact .address {
+    margin: 35px 0 15px;
+}
+.primary-contact .website {
+    margin-bottom: 40px;
+}
+.primary-contact a {
+    font-size: 16px;
+    font-weight: normal;
+}
+.primary-contact a i {
+  margin-left: 15px;
+}
+.contact-form .name-email {
+    height: 45px;
+}
+.contact-form .input {
+    width: 100%;
+    margin-bottom: 35px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0.5px 0.866px 10px 0px rgba( 90, 144, 227, 0.2);
+    padding-left: 18px;
+    color: #a1a1a1;
+}
+.contact-form .message {
+    padding-top: 30px;
+}
+.contact-form a {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.default-padding {
+    padding: 100px 0;
+}
+
+.blog-details {
+    box-shadow: 1.5px 2.598px 15px 0px rgba(124, 134, 224, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.blog-details img {
+  width: 100%;
+}
+.blog-info {
+    padding: 36px 25px;
+    background: #ffffff;
+}
+.blog-info h4 {
+    margin-bottom: 10px;
+}
+.blog-info span {
+    margin-right: 13px;
+    font-size: 12px;
+    color: #898998;
+}
+.blog-info span i {
+    margin-right: 6px; 
+    color: #606060;
+}
+.blog-info p {
+    margin: 20px 0 30px 0;
+}
+.blog-info a {
+    font-size: 16px;
+    color: #4e8ec8; 
+    position: relative;
+    padding-right: 25px;
+}
+.blog-info a:after {
+    content: "";
+    background: url(assets/images/testimonial/arrow-1.png);
+    height: 7px;
+    width: 11px;
+    display: block;
+    position: absolute;
+    right: 4px;
+    bottom: 6px;
+}
