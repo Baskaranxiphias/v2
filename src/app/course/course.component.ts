@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-declare var TweenLite: any;
-import * as $ from 'jquery';
+
 @Component({
-  selector: 'app-package',
-  templateUrl: './package.component.html',
-  styleUrls: ['./package.component.css']
+  selector: 'app-course',
+  templateUrl: './course.component.html',
+  styleUrls: ['./course.component.css']
 })
-export class PackageComponent implements OnInit {
+export class CourseComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit() {
+
       (function () {
 
           var width, height, largeHeader, canvas, ctx, circles, target, animateHeader = true;
@@ -104,7 +104,5 @@ export class PackageComponent implements OnInit {
       })();
 
   }
-
-
 
 }
