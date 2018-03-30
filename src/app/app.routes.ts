@@ -42,15 +42,12 @@ export const routes: Routes = [
     { path: 'libraryManagement', component: LibraryComponent, },
     { path: 'attendanceManagement', component: AttendanceComponent, },
     { path: 'courseManagement', component: CourseComponent, },
-
-
     { path: 'empPyroll', component: EmpPayrollComponent, },
     { path: 'hrms', component: HrmsComponent, },
     { path: 'schoolManagement', component: SchoolComponent, },
     { path: 'timetable', component: TimeTableComponent, },
     { path: 'hostelMangement', component: HostelComponent, },
     { path: 'onlineExamination', component: OnlineExamComponent, },
-
     { path: 'deviceEnable', component: DeviceEnableComponent, },
     { path: 'feeManagement', component: FeeManagementComponent, },
     { path: 'transport', component: TransportComponent, },
@@ -58,11 +55,8 @@ export const routes: Routes = [
     { path: 'noticeBoard', component: NoticeboardComponent, },
     { path: 'bulksms', component: BulkSmsComponent, },
     { path: 'bulkEmail', component: BulkEmailComponent, },
-
     { path: 'inventoryMangement', component: InventoryComponent, },
     { path: 'sportsMangement', component: SportsComponent, },
-
-
 ];
 
 @NgModule({

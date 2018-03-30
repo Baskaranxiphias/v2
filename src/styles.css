@@ -1272,8 +1272,7 @@ button:focus {
     padding-left: 15px;
 }
 
-.left-featured-details .media-body .title h3{
-
+.left-featured-details .media-body .title h3 {
 }
 
 
@@ -2795,3 +2794,17 @@ button:focus {
     padding-top: 5rem;
 }
 
+
+.primary-txt {
+    margin-bottom: 1px !important;
+    padding: 10px;
+       background-color: rgba(0, 0, 0, 0.06);
+    -webkit-box-shadow: 0px 2px 4px #00000024;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0);
+    color: #ffffff;
+}
+
+
+.margin-bottom-0 {
+    margin-bottom: 10px !important;
+}
