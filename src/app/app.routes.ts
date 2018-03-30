@@ -12,6 +12,21 @@ import {PayrollManagementComponent}from'./payroll-management/payroll-management.
 import {LibraryComponent}from'./library/library.component';
 import {AttendanceComponent}from'./attendance/attendance.component';
 import {CourseComponent}from'./course/course.component';
+import {EmpPayrollComponent}from'./emp-payroll/emp-payroll.component';
+import {HrmsComponent}from'./hrms/hrms.component';
+import {SchoolComponent}from'./school/school.component';
+import {TimeTableComponent}from'./time-table/time-table.component';
+import {HostelComponent}from'./hostel/hostel.component';
+import {OnlineExamComponent}from'./online-exam/online-exam.component';
+import {DeviceEnableComponent}from'./device-enable/device-enable.component';
+import {FeeManagementComponent}from'./fee-management/fee-management.component';
+import {TransportComponent}from'./transport/transport.component';
+import {AccountComponent}from'./account/account.component';
+import {NoticeboardComponent}from'./noticeboard/noticeboard.component';
+import {BulkSmsComponent}from'./bulk-sms/bulk-sms.component';
+import {BulkEmailComponent}from'./bulk-email/bulk-email.component';
+import {InventoryComponent}from'./inventory/inventory.component';
+import {SportsComponent}from'./sports/sports.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent, },
@@ -26,7 +41,28 @@ export const routes: Routes = [
     { path: 'payrollManagement', component: PayrollManagementComponent, },
     { path: 'libraryManagement', component: LibraryComponent, },
     { path: 'attendanceManagement', component: AttendanceComponent, },
-    { path: 'courseManagement', component: CourseComponent, }
+    { path: 'courseManagement', component: CourseComponent, },
+
+
+    { path: 'empPyroll', component: EmpPayrollComponent, },
+    { path: 'hrms', component: HrmsComponent, },
+    { path: 'schoolManagement', component: SchoolComponent, },
+    { path: 'timetable', component: TimeTableComponent, },
+    { path: 'hostelMangement', component: HostelComponent, },
+    { path: 'onlineExamination', component: OnlineExamComponent, },
+
+    { path: 'deviceEnable', component: DeviceEnableComponent, },
+    { path: 'feeManagement', component: FeeManagementComponent, },
+    { path: 'transport', component: TransportComponent, },
+    { path: 'accountManagement', component: AccountComponent, },
+    { path: 'noticeBoard', component: NoticeboardComponent, },
+    { path: 'bulksms', component: BulkSmsComponent, },
+    { path: 'bulkEmail', component: BulkEmailComponent, },
+
+    { path: 'inventoryMangement', component: InventoryComponent, },
+    { path: 'sportsMangement', component: SportsComponent, },
+
+
 ];
 
 @NgModule({

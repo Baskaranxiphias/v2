@@ -17,7 +17,22 @@ import { ErpSoftwareComponent } from './erp-software/erp-software.component';
 import { PayrollManagementComponent } from './payroll-management/payroll-management.component';
 import { LibraryComponent } from './library/library.component';
 import { AttendanceComponent } from './attendance/attendance.component';
-import { CourseComponent } from './course/course.component'
+import { CourseComponent } from './course/course.component';
+import { EmpPayrollComponent } from './emp-payroll/emp-payroll.component';
+import { HrmsComponent } from './hrms/hrms.component';
+import { SchoolComponent } from './school/school.component';
+import { TimeTableComponent } from './time-table/time-table.component';
+import { HostelComponent } from './hostel/hostel.component';
+import { OnlineExamComponent } from './online-exam/online-exam.component';
+import { DeviceEnableComponent } from './device-enable/device-enable.component';
+import { FeeManagementComponent } from './fee-management/fee-management.component';
+import { TransportComponent } from './transport/transport.component';
+import { AccountComponent } from './account/account.component';
+import { NoticeboardComponent } from './noticeboard/noticeboard.component';
+import { BulkSmsComponent } from './bulk-sms/bulk-sms.component';
+import { BulkEmailComponent } from './bulk-email/bulk-email.component';
+import { InventoryComponent } from './inventory/inventory.component';
+import { SportsComponent } from './sports/sports.component'
 
 @NgModule({
     declarations: [
@@ -33,7 +48,22 @@ import { CourseComponent } from './course/course.component'
         PayrollManagementComponent,
         LibraryComponent,
         AttendanceComponent,
-        CourseComponent
+        CourseComponent,
+        EmpPayrollComponent,
+        HrmsComponent,
+        SchoolComponent,
+        TimeTableComponent,
+        HostelComponent,
+        OnlineExamComponent,
+        DeviceEnableComponent,
+        FeeManagementComponent,
+        TransportComponent,
+        AccountComponent,
+        NoticeboardComponent,
+        BulkSmsComponent,
+        BulkEmailComponent,
+        InventoryComponent,
+        SportsComponent
     ],
     imports: [
         BrowserModule,
