@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Meta, Title } from "@angular/platform-browser";
 
 @Component({
   selector: 'app-erp-software',
@@ -7,7 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ErpSoftwareComponent implements OnInit {
 
-  constructor() { }
+ 
+    constructor(meta: Meta, title: Title) {
+
+        title.setTitle('ERP Management');
+    
+        meta.addTags([
+          { name: 'author',   content: 'Coursetro.com'},
+          { name: 'keywords', content: 'angular seo, angular 4 universal, etc'},
+          { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
+        ]);
+    
+      }
 
   ngOnInit() {
 

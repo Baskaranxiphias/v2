@@ -8,6 +8,10 @@ import * as $ from 'jquery';
 export class AppComponent {
   title = 'app';
 
+  onActivate(event) {
+    window.scroll(0,0);
+    
+}
   ngOnInit() {
     var stickyOffset = $('.sticky').offset().top;
 

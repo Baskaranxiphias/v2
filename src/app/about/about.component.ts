@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Meta, Title } from "@angular/platform-browser";
 declare var skrollr: any;
 import * as $ from 'jquery';
 
@@ -9,8 +10,19 @@ import * as $ from 'jquery';
 })
 export class AboutComponent implements OnInit {
 
-    constructor() { }
+    constructor(meta: Meta, title: Title) {
 
+        title.setTitle('About Page');
+    
+        meta.addTags([
+          { name: 'author',   content: 'Coursetro.com'},
+          { name: 'keywords', content: 'angular seo, angular 4 universal, etc'},
+          { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
+        ]);
+    
+      }
+      
+     
     ngOnInit() {
 
         var mySkrollr = skrollr.init({

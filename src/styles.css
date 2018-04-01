@@ -321,7 +321,7 @@ NAVIGATION STYLE
             color: #1D62AC;
         }
 
-        .navbar-align .navbar-nav > li > a:focus, .active {
+        .active {
             color: #1D62AC !important;
             font-weight: 900;
         }

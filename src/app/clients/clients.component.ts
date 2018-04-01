@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Meta, Title } from "@angular/platform-browser";
 declare var jquery: any;
 declare var $: any;
 declare var lightGallery: any;
@@ -9,7 +10,18 @@ declare var lightGallery: any;
 })
 export class ClientsComponent implements OnInit {
 
-  constructor() { }
+  
+    constructor(meta: Meta, title: Title) {
+
+        title.setTitle('Installations');
+    
+        meta.addTags([
+          { name: 'author',   content: 'Coursetro.com'},
+          { name: 'keywords', content: 'angular seo, angular 4 universal, etc'},
+          { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
+        ]);
+    
+      }
 
   ngOnInit() {
 
