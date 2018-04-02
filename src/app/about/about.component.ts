@@ -25,6 +25,7 @@ export class AboutComponent implements OnInit {
      
     ngOnInit() {
 
+
         var mySkrollr = skrollr.init({
             forceHeight: false,
             easings: {

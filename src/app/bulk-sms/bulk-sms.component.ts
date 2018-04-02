@@ -11,11 +11,11 @@ export class BulkSmsComponent implements OnInit {
  
     constructor(meta: Meta, title: Title) {
 
-        title.setTitle('Bulk SMS Management');
+        title.setTitle('Online Bulk SMS Software | Bulk Message Software - A.T.S.I');
     
         meta.addTags([
           { name: 'author',   content: 'Coursetro.com'},
-          { name: 'keywords', content: 'angular seo, angular 4 universal, etc'},
+          { name: 'keywords', content: 'bulk sms sender software,bulk message software,bulk text messaging software,best bulk sms software,sms sending software,bulk sms service india,online bulk sms'},
           { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
         ]);
     

@@ -14,12 +14,13 @@ export class HomeComponent implements OnInit {
 
     constructor(meta: Meta, title: Title) {
 
-        title.setTitle('Home Page');
+        title.setTitle('Best Online School Management Software-ATSI');
     
         meta.addTags([
           { name: 'author',   content: 'Coursetro.com'},
-          { name: 'keywords', content: 'angular seo, angular 4 universal, etc'},
-          { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
+          {
+              name: 'keywords', content: 'online school management system,school management software india,school management software,best school management software,online school management software,best school management software in india,school management software india,school management system software'},
+          { name: 'description', content: 'ATSI Modules are designed to provide specific functionalities to the Online School Management Software to accomplish the routine tasks of any institution in a categorized way and with great ease.' }
         ]);
     
       }

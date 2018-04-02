@@ -11,11 +11,11 @@ export class LibraryComponent implements OnInit {
   
     constructor(meta: Meta, title: Title) {
 
-        title.setTitle('Library Management');
+        title.setTitle('Online Library Management System Software India - A.T.S.I');
     
         meta.addTags([
           { name: 'author',   content: 'Coursetro.com'},
-          { name: 'keywords', content: 'angular seo, angular 4 universal, etc'},
+          { name: 'keywords', content: 'library management system,online library management system,library management system software,library management software'},
           { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
         ]);
     
