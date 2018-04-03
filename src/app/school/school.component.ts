@@ -11,11 +11,11 @@ export class SchoolComponent implements OnInit {
  
     constructor(meta: Meta, title: Title) {
 
-        title.setTitle('School Management');
+        title.setTitle('Online School Information Management System India - A.T.S.I.');
     
         meta.addTags([
           { name: 'author',   content: 'Coursetro.com'},
-          { name: 'keywords', content: 'angular seo, angular 4 universal, etc'},
+          { name: 'keywords', content: 'online school management system,school information system,school management system india,school information management system,school management system'},
           { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
         ]);
     
@@ -24,6 +24,8 @@ export class SchoolComponent implements OnInit {
   ngOnInit() {
 
       (function () {
+
+
 
           var width, height, largeHeader, canvas, ctx, circles, target, animateHeader = true;
 

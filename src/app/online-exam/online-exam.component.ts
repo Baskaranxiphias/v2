@@ -11,11 +11,11 @@ export class OnlineExamComponent implements OnInit {
   
     constructor(meta: Meta, title: Title) {
 
-        title.setTitle('Online Exam ');
+        title.setTitle('Best Online Examination Management System Software - A.T.S.I.');
     
         meta.addTags([
-          { name: 'author',   content: 'Coursetro.com'},
-          { name: 'keywords', content: 'angular seo, angular 4 universal, etc'},
+          { name: 'author',   content: 'Mr.Rohit Kumar'},
+          { name: 'keywords', content: 'online exam system,online exam software,online examination software,examination system,online examination system,examination management system'},
           { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
         ]);
     

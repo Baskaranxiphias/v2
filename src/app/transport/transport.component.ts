@@ -11,11 +11,11 @@ export class TransportComponent implements OnInit {
   
     constructor(meta: Meta, title: Title) {
 
-        title.setTitle('Transport Management');
+        title.setTitle('GPS Based Vehicle Tracking Management System -A.T.S.I.');
     
         meta.addTags([
-          { name: 'author',   content: 'Coursetro.com'},
-          { name: 'keywords', content: 'angular seo, angular 4 universal, etc'},
+          { name: 'author',   content: 'Mr.Rohit Kumar'},
+          { name: 'keywords', content: 'gps tracking system,gps vehicle tracking system,gps based vehicle tracking system,vehicle gps system,vehicle management system'},
           { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
         ]);
     

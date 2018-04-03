@@ -10,11 +10,12 @@ export class InventoryComponent implements OnInit {
 
     constructor(meta: Meta, title: Title) {
 
-        title.setTitle('Inventory Management');
+        title.setTitle('Stock Inventory Management Software | Store Stock Control Software');
     
         meta.addTags([
-          { name: 'author',   content: 'Coursetro.com'},
-          { name: 'keywords', content: 'angular seo, angular 4 universal, etc'},
+          { name: 'author',   content: 'Mr.Rohit Kumar'},
+          {
+              name: 'keywords', content: 'stock management software,best inventory management software,inventory control software,stock inventory software,store inventory software,'},
           { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
         ]);
     

@@ -11,11 +11,11 @@ export class SportsComponent implements OnInit {
   
     constructor(meta: Meta, title: Title) {
 
-        title.setTitle('Sports Management');
+        title.setTitle('Sports Club Management System Software - A.T.S.I.');
     
         meta.addTags([
-          { name: 'author',   content: 'Coursetro.com'},
-          { name: 'keywords', content: 'angular seo, angular 4 universal, etc'},
+          { name: 'author',   content: 'Mr.Rohit Kumar'},
+          { name: 'keywords', content: 'sports management system, sports team management software, sports management software, sports club management system,sports club management software, sports league management software'},
           { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
         ]);
     

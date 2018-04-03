@@ -2874,3 +2874,24 @@ button:focus {
 .justify-content-around li {
     cursor: pointer;
 }
+
+.video-content {
+    background-image: url('assets/images/counter/bg-factor.png');
+}
+
+.text-white {
+    color: #fff;
+}
+
+.padding-5 {
+    padding: 5rem;
+}
+
+.xiphias-usp {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 40px;
+    font-family: 'Roboto-thin',sans-serif;
+    font-weight: 300;
+}
+

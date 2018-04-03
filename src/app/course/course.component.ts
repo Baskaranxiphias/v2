@@ -11,12 +11,12 @@ export class CourseComponent implements OnInit {
   
     constructor(meta: Meta, title: Title) {
 
-        title.setTitle('Course Management');
+        title.setTitle('Best Web Based Syllabus Management System-A.T.S.I');
     
         meta.addTags([
-          { name: 'author',   content: 'Coursetro.com'},
-          { name: 'keywords', content: 'angular seo, angular 4 universal, etc'},
-          { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
+          { name: 'author',   content: 'Mr.Rohit Kumar'},
+          { name: 'keywords', content: 'best syllabus management system,syllabus management system,web based syllabus management system'},
+          { name: 'description', content: 'ATSI facilitates the users to define the best syllabus management system through which institutions can define the syllabus for particular courses. This web based syllabus management system also facilitates the admin and teachers to make required changes in their syllabus during proposal. ' }
         ]);
     
       }

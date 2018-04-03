@@ -8,8 +8,17 @@ import { Meta, Title } from "@angular/platform-browser";
 })
 export class PayrollManagementComponent implements OnInit {
 
-  constructor() { }
+    constructor(meta: Meta, title: Title) {
 
+        title.setTitle('Payroll Management');
+
+        meta.addTags([
+            { name: 'author', content: 'Mr.Rohit Kumar' },
+            { name: 'keywords', content: 'Payroll Management' },
+            { name: 'description', content: 'Payroll Management' }
+        ]);
+
+    }
   ngOnInit() {
 
       (function () {

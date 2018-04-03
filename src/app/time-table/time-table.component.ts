@@ -10,11 +10,11 @@ export class TimeTableComponent implements OnInit {
 
     constructor(meta: Meta, title: Title) {
 
-        title.setTitle('Time Table Management');
+        title.setTitle('Automatic School Timetable Generator System Software - A.T.S.I.');
     
         meta.addTags([
-          { name: 'author',   content: 'Coursetro.com'},
-          { name: 'keywords', content: 'angular seo, angular 4 universal, etc'},
+          { name: 'author',   content: 'Mr.Rohit Kumar'},
+          { name: 'keywords', content: 'school timetable software,timetable generator software,time table management system,school time table for teachers,automatic timetable generator'},
           { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
         ]);
     

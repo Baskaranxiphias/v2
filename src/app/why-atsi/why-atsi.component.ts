@@ -11,12 +11,12 @@ export class WhyAtsiComponent implements OnInit {
 
     constructor(meta: Meta, title: Title) {
 
-        title.setTitle('Why ATSI');
+        title.setTitle('Why A.T.S.I.');
 
         meta.addTags([
-            { name: 'author', content: 'Coursetro.com' },
-            { name: 'keywords', content: 'angular seo, angular 4 universal, etc' },
-            { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
+            { name: 'author', content: 'Mr.Rohit Kumar' },
+            { name: 'keywords', content: 'Why A.T.S.I.' },
+            { name: 'description', content: 'We are a Software Development Company marked our presence in 2005 and dedicated to provide second to none automation system in educational institutions. ATSI helps institutions to systematize their overall activities with increased efficiency' }
         ]);
 
     }

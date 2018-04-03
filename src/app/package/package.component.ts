@@ -12,12 +12,12 @@ export class PackageComponent implements OnInit {
   
     constructor(meta: Meta, title: Title) {
 
-        title.setTitle('Package');
+        title.setTitle('Packages - A.T.S.I.');
     
         meta.addTags([
-          { name: 'author',   content: 'Coursetro.com'},
-          { name: 'keywords', content: 'angular seo, angular 4 universal, etc'},
-          { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
+          { name: 'author',   content: 'Mr.Rohit Kumar'},
+          { name: 'keywords', content: 'Packages'},
+          { name: 'description', content: 'The two versions of ATSI deals with multitude of institutions activities.The first version ie 8.01 Professional incorporates features that are suitable for Schools while another version 8.02 Professional perfectly suits the requirements of Higher Education.' }
         ]);
     
       }

@@ -11,12 +11,12 @@ export class BulkEmailComponent implements OnInit {
   
     constructor(meta: Meta, title: Title) {
 
-        title.setTitle('Bulk Email Management');
+        title.setTitle('Bulk Email Sending Software | Bulk and Mass Mail Software-A.T.S.I');
     
         meta.addTags([
-          { name: 'author',   content: 'Coursetro.com'},
-          { name: 'keywords', content: 'angular seo, angular 4 universal, etc'},
-          { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
+          { name: 'author',   content: 'Mr.Rohit Kumar'},
+          { name: 'keywords', content: 'bulk email sending software,bulk email software,mass mailing software,bulk mail software'},
+          { name: 'description', content: 'The bulk email sending software sends mass emails to the students, parents, alumni and more as and when required by the institutions. To communicate some important message, this mass mailing software plays an important role that sends emails and also keeps a track of delivered and not delivered emails too.' }
         ]);
     
       }

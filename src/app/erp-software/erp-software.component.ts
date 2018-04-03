@@ -11,12 +11,12 @@ export class ErpSoftwareComponent implements OnInit {
  
     constructor(meta: Meta, title: Title) {
 
-        title.setTitle('School Management ERP Software India| Cloud Education ERP SOftware');
+        title.setTitle('School Management ERP Software India| Cloud Education ERP Software');
     
         meta.addTags([
-          { name: 'author',   content: 'Coursetro.com'},
-          { name: 'keywords', content: 'angular seo, angular 4 universal, etc'},
-          { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
+          { name: 'author',   content: 'Mr.Rohit Kumar'},
+          { name: 'keywords', content: 'School Management ERP Software India,Cloud Education ERP Software,Education ERP Software'},
+          { name: 'description', content: 'o automate all the important modules of an institution, ATSI, which is a School Management ERP Software India has an important role to play. This Cloud Education ERP Software is beneficial for managing and streamlining student related information in an efficient way through its different modules.' }
         ]);
     
       }

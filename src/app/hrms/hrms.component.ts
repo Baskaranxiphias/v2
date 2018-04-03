@@ -11,11 +11,11 @@ export class HrmsComponent implements OnInit {
   
     constructor(meta: Meta, title: Title) {
 
-        title.setTitle('HRMS Management');
+        title.setTitle('HRMS,HR,Human Resource Management System Software India - A.T.S.I.');
     
         meta.addTags([
-          { name: 'author',   content: 'Coursetro.com'},
-          { name: 'keywords', content: 'angular seo, angular 4 universal, etc'},
+          { name: 'author',   content: 'Mr.Rohit Kumar'},
+          { name: 'keywords', content: 'human resources software,hr management software,hrm software,hr management system,human resource management system,human resource management software,hrms system,online hr software,human resource management system software,hr software india'},
           { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
         ]);
     

@@ -10,12 +10,12 @@ export class AttendanceComponent implements OnInit {
 
     constructor(meta: Meta, title: Title) {
 
-        title.setTitle('Attendance Management');
+        title.setTitle('Online School Attendance Management System Software-A.T.S.I');
     
         meta.addTags([
-          { name: 'author',   content: 'Coursetro.com'},
-          { name: 'keywords', content: 'angular seo, angular 4 universal, etc'},
-          { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
+          { name: 'author',   content: 'Mr.Rohit Kumar'},
+          { name: 'keywords', content: 'school attendance management system,student attendance management system,attendance management system,online attendance,management system,online attendance system'},
+          { name: 'description', content: 'Pull information from your attendance management system with every entry made in the school and integrate it with the School attendance management system. By using this online attendance management system, teachers can mark the attendance of students’ day wise, class wise and even subject wise attendance' }
         ]);
     
       }
