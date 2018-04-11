@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from "@angular/platform-browser";
 declare var AOS: any;
-import * as $ from 'jquery';
+declare var $: any;
+declare var jquery: any;
 @Component({
     selector: 'app-why-atsi',
     templateUrl: './why-atsi.component.html',
@@ -67,6 +68,19 @@ export class WhyAtsiComponent implements OnInit {
         $("#morekeyfeature").click(function () {
             $("#morekeyfeatureDetails").slideToggle("slow");
         });
+
+        !function (d, s, id) {
+            var js: any,
+                fjs = d.getElementsByTagName(s)[0],
+                p = 'https';
+            if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = p + "://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+        }
+            (document, "script", "twitter-wjs");
 
 
         (function () {
@@ -161,6 +175,21 @@ export class WhyAtsiComponent implements OnInit {
             }
             AOS.init({ offset: 200, duration: 1500, disable: "mobile" })
         })();
+
+        $('.owl-carousel').owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 10,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+
+            }
+        })
 
     }
 

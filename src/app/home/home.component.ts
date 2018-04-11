@@ -4,6 +4,7 @@ import "lightGallery";
 declare var jquery: any;
 declare var $: any;
 declare var lightGallery: any;
+
 declare var WOW: any;
 @Component({
     selector: 'app-home',
@@ -15,16 +16,17 @@ export class HomeComponent implements OnInit {
     constructor(meta: Meta, title: Title) {
 
         title.setTitle('Best Online School Management Software India - A.T.S.I.');
-    
+
         meta.addTags([
-          { name: 'author',   content: 'Mr.Rohit Kumar'},
-          {
-              name: 'keywords', content: 'online school management system,school management software india,school management software,best school management software,online school management software,best school management software in india,school management software india,school management system software'},
-          { name: 'description', content: 'ATSI Modules are designed to provide specific functionalities to the Online School Management Software to accomplish the routine tasks of any institution in a categorized way and with great ease.' }
+            { name: 'author', content: 'Mr.Rohit Kumar' },
+            {
+                name: 'keywords', content: 'online school management system,school management software india,school management software,best school management software,online school management software,best school management software in india,school management software india,school management system software'
+            },
+            { name: 'description', content: 'ATSI Modules are designed to provide specific functionalities to the Online School Management Software to accomplish the routine tasks of any institution in a categorized way and with great ease.' }
 
         ]);
-    
-      }
+
+    }
 
     ngOnInit() {
 
@@ -106,6 +108,46 @@ export class HomeComponent implements OnInit {
                 offset: 20,
             });
         wow.init();
+
+
+        //$('.host-element').frameCarousel({
+        //    debug: false,
+
+        //    first: 0,
+
+        //    swipeThreshold: 10,
+
+        //    frame: 'assets/images/frame.png',
+
+        //    frameSize: [{
+        //        width: 440,
+        //        height:300,
+        //        minScreenWidth: 768,
+        //        maxScreenWidth: 1024
+        //    }],
+
+        //    collapseThreshold: 450,
+
+        //    boundingBox: {
+        //        left: '4.3%',
+        //        top: '4.48%',
+        //        width: '91.4%',
+        //        height: '61.1%'
+        //    },
+
+        //    images: ['assets/images/1.jpg',
+        //        'assets/images/2.jpg',
+        //        'assets/images/2.jpg',
+        //        'assets/images/2.jpg',
+        //        'assets/images/2.jpg',
+        //        'assets/images/2.jpg',
+        //        'assets/images/2.jpg',
+        //        'assets/images/2.jpg',],
+        //    autoplay: false,
+        //    autoplayInterval: 2000
+
+        //});
+
 
     }
 
