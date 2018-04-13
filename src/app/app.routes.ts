@@ -27,6 +27,11 @@ import {BulkSmsComponent}from'./bulk-sms/bulk-sms.component';
 import {BulkEmailComponent}from'./bulk-email/bulk-email.component';
 import {InventoryComponent}from'./inventory/inventory.component';
 import {SportsComponent}from'./sports/sports.component';
+import {TermsComponent}from'./terms/terms.component';
+import {ReturnPolicyComponent}from'./return-policy/return-policy.component';
+import {PrivacyPolicyComponent}from'./privacy-policy/privacy-policy.component';
+import {DisclaimerComponent}from'./disclaimer/disclaimer.component';
+import {SitemapComponent}from'./sitemap/sitemap.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent, },
@@ -57,6 +62,11 @@ export const routes: Routes = [
     { path: 'bulkEmail', component: BulkEmailComponent, },
     { path: 'inventoryMangement', component: InventoryComponent, },
     { path: 'sportsMangement', component: SportsComponent, },
+    { path: 'terms', component: TermsComponent, },
+    { path: 'returnPolicy', component: ReturnPolicyComponent, },
+    { path: 'privacyPolicy', component: PrivacyPolicyComponent, },
+    { path: 'disclaimer', component: DisclaimerComponent, },
+    { path: 'sitemap', component: SitemapComponent, }
 ];
 
 @NgModule({

@@ -32,7 +32,13 @@ import { NoticeboardComponent } from './noticeboard/noticeboard.component';
 import { BulkSmsComponent } from './bulk-sms/bulk-sms.component';
 import { BulkEmailComponent } from './bulk-email/bulk-email.component';
 import { InventoryComponent } from './inventory/inventory.component';
-import { SportsComponent } from './sports/sports.component'
+import { SportsComponent } from './sports/sports.component';
+import { TermsComponent } from './terms/terms.component';
+import { ReturnPolicyComponent } from './return-policy/return-policy.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { DisclaimerComponent } from './disclaimer/disclaimer.component';
+import { SitemapComponent } from './sitemap/sitemap.component';
+import { BlogComponent } from './blog/blog.component'
 
 @NgModule({
     declarations: [
@@ -63,7 +69,13 @@ import { SportsComponent } from './sports/sports.component'
         BulkSmsComponent,
         BulkEmailComponent,
         InventoryComponent,
-        SportsComponent
+        SportsComponent,
+        TermsComponent,
+        ReturnPolicyComponent,
+        PrivacyPolicyComponent,
+        DisclaimerComponent,
+        SitemapComponent,
+        BlogComponent
     ],
     imports: [
         BrowserModule,
