@@ -46,7 +46,7 @@ export const routes: Routes = [
     { path: 'payrollManagement', component: PayrollManagementComponent, },
     { path: 'libraryManagement', component: LibraryComponent, },
     { path: 'attendanceManagement', component: AttendanceComponent, },
-    { path: 'courseManagement', component: CourseComponent, },
+    { path: 'syllabusManagement', component: CourseComponent, },
     { path: 'empPyroll', component: EmpPayrollComponent, },
     { path: 'hrms', component: HrmsComponent, },
     { path: 'schoolManagement', component: SchoolComponent, },
