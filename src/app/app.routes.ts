@@ -42,7 +42,7 @@ export const routes: Routes = [
     { path: 'package', component: PackageComponent, },
     { path: 'clients', component: ClientsComponent, },
     { path: 'testimonials', component: TestimonialComponent, },
-    { path: 'contact', component: ContactComponent, }, s
+    { path: 'contact', component: ContactComponent, }, 
     { path: 'erpSoftware', component: ErpSoftwareComponent, },
     { path: 'payrollManagement', component: PayrollManagementComponent, },
     { path: 'libraryManagement', component: LibraryComponent, },
