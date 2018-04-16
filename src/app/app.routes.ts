@@ -42,7 +42,7 @@ export const routes: Routes = [
     { path: 'package', component: PackageComponent, },
     { path: 'clients', component: ClientsComponent, },
     { path: 'testimonials', component: TestimonialComponent, },
-    { path: 'contact', component: ContactComponent, },
+    { path: 'contact', component: ContactComponent, }, s
     { path: 'erpSoftware', component: ErpSoftwareComponent, },
     { path: 'payrollManagement', component: PayrollManagementComponent, },
     { path: 'libraryManagement', component: LibraryComponent, },
@@ -67,8 +67,8 @@ export const routes: Routes = [
     { path: 'returnPolicy', component: ReturnPolicyComponent, },
     { path: 'privacyPolicy', component: PrivacyPolicyComponent, },
     { path: 'disclaimer', component: DisclaimerComponent, },
-    { path: 'sitemap', component: SitemapComponent, 
-         { path: 'blog', component: BlogComponent, }
+    { path: 'sitemap', component: SitemapComponent, },
+    { path: 'blog', component: BlogComponent, }
 ];
 
 @NgModule({
