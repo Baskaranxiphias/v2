@@ -32,6 +32,7 @@ import {ReturnPolicyComponent}from'./return-policy/return-policy.component';
 import {PrivacyPolicyComponent}from'./privacy-policy/privacy-policy.component';
 import {DisclaimerComponent}from'./disclaimer/disclaimer.component';
 import {SitemapComponent}from'./sitemap/sitemap.component';
+import {BlogComponent}from'./blog/blog.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent, },
@@ -66,7 +67,8 @@ export const routes: Routes = [
     { path: 'returnPolicy', component: ReturnPolicyComponent, },
     { path: 'privacyPolicy', component: PrivacyPolicyComponent, },
     { path: 'disclaimer', component: DisclaimerComponent, },
-    { path: 'sitemap', component: SitemapComponent, }
+    { path: 'sitemap', component: SitemapComponent, 
+         { path: 'blog', component: BlogComponent, }
 ];
 
 @NgModule({
