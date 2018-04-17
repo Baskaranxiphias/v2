@@ -1,1 +1,41 @@
-<!--<div class="blog-content"></div>-->
+<section id="large-header" class="about hero_section gradiant_2 padding" style="height: 662px; outline: none;" data-scroll-id="large-header" tabindex="-1">
+    <canvas id="bubble-canvas" width="1366" height="662"></canvas>
+    <div class="display-table">
+        <div class="table-cell">
+            <div class="container">
+                <div class="hero_content">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="section-title text-center wow fadeInUp  animated" data-wow-duration="1.5s" data-wow-delay="0s">
+                            <h2 class="title">Attendance Software</h2>
+                            <p>ERP Student Information Software - A.T.S.I is an ERP enabled educational solution that has been designed and developed by XIPHIAS Software Technology (p) Ltd.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero_mockup d-none d-md-block"></div>
+        </div>
+    </div>
+</section>
+<div class="home2-second-bg">
+    <!--<ul *ngFor="let data of httpdata.items">
+        <li>  {{data.title}} </li>
+    </ul>-->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 padding-5">
+                    <ul class="list-group wow  fadeInUp animated"  data-wow-duration="1.5s" data-wow-delay="0.5s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <!--<img alt="blog" src="assets/images/testimonial/01.png">-->
+                        <li class="blog-details text-left blog-info padding-3 margin-bottom-20" *ngFor="let data of httpdata.items">
+                            <h4><a href="{{data.url}}" target="_blank">{{data.title}}</a></h4>
+                            <span class="blog-author"><i class="fa fa-user"></i>Published</span>
+                            <span class="date"><i class="fa fa-calendar"></i>{{data.published}}</span>
+                            <!--  <p>{{data.content}}</p>-->
+                            <a href="{{data.url}}#comments" target="_blank" class="date pull-right"> Comments <span class="date">{{data.replies.totalItems}}</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

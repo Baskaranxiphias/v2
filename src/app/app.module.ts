@@ -1,6 +1,7 @@
 
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
+import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -75,12 +76,14 @@ import { BlogComponent } from './blog/blog.component'
         PrivacyPolicyComponent,
         DisclaimerComponent,
         SitemapComponent,
-        BlogComponent
+        BlogComponent,
+      
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
-        FormsModule
+        FormsModule,
+        HttpModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

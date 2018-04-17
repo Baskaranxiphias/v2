@@ -2149,7 +2149,7 @@ button:focus {
 
 .about .section-title .title {
     font-family: 'Roboto-thin',sans-serif;
-    font-size: 60px;
+    font-size: 45px;
     position: relative;
     font-weight: 500;
     margin-bottom: 49px;
@@ -2189,7 +2189,7 @@ button:focus {
     }
 
 .hero_mockup {
-    background-image: url('assets/images/about/mockup-5.png');
+    /*background-image: url('assets/images/about/mockup-5.png');*/
     background-repeat: no-repeat;
     background-position: bottom center;
     position: absolute;
@@ -2455,7 +2455,7 @@ button:focus {
 
 .margin-bottom-20 {
     margin-bottom: 20px;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .section-padding-sm {
@@ -3232,4 +3232,23 @@ p.large {
 
 .padding-bottom-7 {
     padding-bottom: 7px;
+}
+
+.padding-3 {
+    padding: 3rem;
+}
+
+.footer-module a {
+    color: #fff;
+    line-height: 27px;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.sub-btn {
+    padding: 10px 40px;
+}
+
+.padding-top-3{
+    padding-top:3rem;
 }

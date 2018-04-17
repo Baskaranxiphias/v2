@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Http } from '@angular/http';
+import 'rxjs/add/operator/map';
+
 import * as $ from 'jquery';
 @Component({
   selector: 'app-root',
@@ -23,5 +26,23 @@ export class AppComponent {
         else sticky.removeClass('fixed');
     });
 
-}
+  }
+
+
+  httpdata: any[] = [];
+  cargando: boolean = true;
+
+  constructor(private http: Http) {
+      this.cargar_productos();
+  }
+
+  public cargar_productos() {
+      this.http.get('https://www.googleapis.com/blogger/v3/blogs/5825039968526520115/posts?key=AIzaSyBTbt5ziPA6tBUeJrYowk-Wv19R5blq0j8')
+          .subscribe(res => {
+              console.log(res.json());
+              this.httpdata = res.json(); // Before this.productos = res.json(); 
+          });
+  }
+
+
 }
