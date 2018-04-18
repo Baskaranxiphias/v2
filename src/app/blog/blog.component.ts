@@ -24,7 +24,7 @@ export class BlogComponent implements OnInit {
     //    this.httpdata = data._body;
     //}
 
-    httpdata: any[] = [];
+   httpdata; 
     cargando: boolean = true;
     
     constructor(private http: Http) {

@@ -14,7 +14,7 @@ export class HostelComponent implements OnInit {
         title.setTitle('Best Student Hostel Management System Software India - A.T.S.I.');
     
         meta.addTags([
-          { name: 'author',   content: 'Coursetro.com'},
+          { name: 'author',   content: 'Mr.Rohit Kumar'},
           { name: 'keywords', content: 'hostel management software india,student hostel management software,hostel management system,best hostel management software'},
           { name: 'description', content: 'To effectively manage the entire hostel activities, student hostel management software helps the institutions. Right from storing the student information through hostel management system, till their registration process and allocation of rooms; this best hostel management software capably deals with every category.' }
         ]);

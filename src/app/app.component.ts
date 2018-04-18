@@ -33,7 +33,7 @@ export class AppComponent {
   }
 
 
-  httpdata: any[] = [];
+  httpdata;
   cargando: boolean = true;
 
   constructor(private http: Http) {

@@ -14,7 +14,7 @@ export class ContactComponent implements OnInit {
         title.setTitle('Contact ');
     
         meta.addTags([
-          { name: 'author',   content: 'Coursetro.com'},
+          { name: 'author',   content: 'Mr.Rohit Kumar '},
           { name: 'keywords', content: 'angular seo, angular 4 universal, etc'},
           { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
         ]);

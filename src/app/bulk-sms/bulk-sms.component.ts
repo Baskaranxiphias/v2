@@ -14,9 +14,9 @@ export class BulkSmsComponent implements OnInit {
         title.setTitle('Online Bulk SMS Software | Bulk Message Software - A.T.S.I');
     
         meta.addTags([
-          { name: 'author',   content: 'Coursetro.com'},
+          { name: 'author',   content: 'Mr. Rohit Kumar'},
           { name: 'keywords', content: 'bulk sms sender software,bulk message software,bulk text messaging software,best bulk sms software,sms sending software,bulk sms service india,online bulk sms'},
-          { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
+          { name: 'description', content: 'Online Bulk SMS Software- Schools SMS Sending Software is essential for universities and colleges. Todays highly competitive higher education marketplace requires Student Services professionals to focus on retention as much as recruitment' }
         ]);
     
       }
