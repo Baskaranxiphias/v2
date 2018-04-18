@@ -11,13 +11,13 @@ export class EmpPayrollComponent implements OnInit {
   
     constructor(meta: Meta, title: Title) {
 
-        title.setTitle('Employee Payroll and Leave Management System Software-A.T.S.I');
+        title.setTitle('Employee Leave Management System Software-A.T.S.I');
     
         meta.addTags([
           { name: 'author',   content: 'Mr.Rohit Kumar'},
           {
               name: 'keywords', content: 'leave management software,employee management software,payroll management software'},
-          { name: 'description', content: 'Payroll management software refers to the employees’ salary and bonus, tax deduction, and other benefits in an organization. This is also a Leave Management Software that keeps a record of leaves applied and approved for the employees. This is a complete employee management software that maintains all the records pertaining to payroll' }
+          { name: 'description', content: 'Employee Leave Management System Software refers to the employees’ salary and bonus, tax deduction, and other benefits in an organization. This is also a Leave Management Software that keeps a record of leaves applied and approved for the employees. This is a complete employee management software that maintains all the records pertaining to payroll' }
         ]);
     
       }

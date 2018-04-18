@@ -16,6 +16,10 @@ export class AppComponent {
     
 }
   ngOnInit() {
+
+
+
+
     var stickyOffset = $('.sticky').offset().top;
 
     $(window).scroll(function () {

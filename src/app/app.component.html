@@ -118,18 +118,19 @@
                             <a routerLink="/erpSoftware">ERP Software |</a>
                             <a routerLink="/attendanceManagement">Attendance Management System |</a>
                             <a routerLink="/syllabusManagement">Syllabus Management System |</a>
-                            <a routerLink="/empPyroll">Employee Payroll System |</a>
-                            <a routerLink="/payrollManagement">Payroll management Software |</a>
+                            <a routerLink="/empPyroll">Employee Management System |</a>
+                            <a routerLink="/payrollManagement">Payroll management System |</a>
                             <a routerLink="/schoolManagement"> School Management System India |</a>
                             <a routerLink="/timetable">Time Table Management System |</a>
-                            <a routerLink="/hostelMangement">Hostel Management Software |</a>
+                            <a routerLink="/hostelMangement">Hostel Management System |</a>
+                            <a routerLink="/feeManagement"> Fee Management System|</a>
                             <a routerLink="/noticeBoard">Notice Board Software |</a>
-                            <a routerLink="/bulksms">Bulk SMS Software |</a>
-                            <a routerLink="/bulkEmail">Bulk Email Software |</a>
-                            <a routerLink="/inventoryMangement">Inventory Mangement Software |</a>
+                            <a routerLink="/bulksms">Bulk SMS System |</a>
+                            <a routerLink="/bulkEmail">Bulk Email System |</a>
+                            <a routerLink="/onlineExamination">online Examination System |</a>
+                            <a routerLink="/inventoryMangement">Inventory Mangement System |</a>
                             <a routerLink="/transport"> Transport Management System |</a>
                             <a routerLink="/accountManagement"> Account Management System |</a>
-
                         </div>
                     </div>
                 </div>
@@ -141,9 +142,9 @@
                     </div>
                     <div class="col-xs-12">
                         <p>Subscribe our newsletter</p>
-                        <form>
+                        <form action="../newletterfrm.ashx" method="post">
                             <div class="form-group">
-                                <input type="email" class="form-control text-box-align" placeholder="Enter Your Email Address">
+                                <input type="email" name="email" class="form-control text-box-align" placeholder="Enter Your Email Address">
                             </div>
                             <div class="text-left">
                                 <button type="submit" class="btn btn-default btn-block sub-btn">Submit</button>
@@ -185,18 +186,19 @@
                         <h4 class="footer-title">Email Us</h4>
                     </div>
                     <div class="col-xs-12">
-                        <form class="">
+                        <form action="../Contact_us.ashx" method="post" on="">
                             <div class="form-group col-md-6">
+                            
                                 <label>Username</label>
-                                <input type="email" class="form-control text-box-align" placeholder="Username">
+                                <input type="text" name="Username" class="form-control text-box-align" placeholder="Username">
                             </div>
                             <div class="form-group col-md-6">
                                 <label>Email</label>
-                                <input type="password" class="form-control text-box-align" placeholder="Email">
+                                <input type="email" name="email" class="form-control text-box-align" placeholder="Email">
                             </div>
                             <div class="form-group col-md-6">
                                 <label>comments</label>
-                                <textarea type="text" class="form-control text-box-align" placeholder="comments" rows="2"></textarea>
+                                <textarea type="text" name="comment" class="form-control text-box-align" placeholder="comments" rows="2"></textarea>
                             </div>
                             <div class="text-left col-md-6 padding-top-3">
                                 <button type="submit" class="btn btn-default btn-block sub-btn ">Submit</button>
