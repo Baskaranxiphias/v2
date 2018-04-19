@@ -22,7 +22,7 @@ export class AppComponent {
                 var emil = $("#Email").val();
                 jQuery.ajax({
                     type: "POST",
-                    url: 'http://atsi.in/handlers/newletterfrm.ashx',
+                    url: 'https://atsi.in/handlers/newletterfrm.ashx',
                     data: { 'email': emil },
                     success: function (data) {
                         alert("hi");
@@ -39,7 +39,7 @@ export class AppComponent {
 
                 jQuery.ajax({
                     type: "POST",
-                    url: 'http://atsi.in/handlers/Contact_us.ashx',
+                    url: 'https://atsi.in/handlers/Contact_us.ashx',
 
                     data: { 'name': name,  'email': emil, 'comment': cmmt },
                     success: function (data) {

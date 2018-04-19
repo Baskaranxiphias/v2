@@ -34,7 +34,7 @@ export class ContactComponent implements OnInit {
 
                 jQuery.ajax({
                     type: "POST",
-                    url: 'http://atsi.in/handlers/Contact_us.ashx',
+                    url: 'https://atsi.in/handlers/Contact_us.ashx',
 
                     data: { 'name': name, 'email': emil, 'comment': cmmt },
                     success: function (data) {
