@@ -15,9 +15,9 @@ public class Contact_us : IHttpHandler {
     public void ProcessRequest (HttpContext context) {
         try
         {
-            username = context.Request.Form[0];
-            Email = context.Request.Form[1];
-            Comments = context.Request.Form[2];
+            username = context.Request.Form["name"];
+            Email = context.Request.Form["email"];
+            Comments = context.Request.Form["comment"];
 
             string Sender = Email;
             string AdminMail = "sougandiraj@gmail.com";

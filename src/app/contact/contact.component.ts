@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from "@angular/platform-browser";
-
+declare var $: any;
+declare var jQuery: any;
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -21,7 +22,31 @@ export class ContactComponent implements OnInit {
     
       }
 
-  ngOnInit() {
+    ngOnInit() {
+
+
+        jQuery(function () {
+          
+            $('#emailUs').click(function () {
+                var name = $("#Name").val();
+                var emil = $("#EmailContact").val();
+                var cmmt = $("#Problem").val();
+
+                jQuery.ajax({
+                    type: "POST",
+                    url: 'http://atsi.in/handlers/Contact_us.ashx',
+
+                    data: { 'name': name, 'email': emil, 'comment': cmmt },
+                    success: function (data) {
+                        alert("Success");
+                        //$("#support").modal("toggle");
+                        //$("#otpOption").modal("show");
+                    }
+                });
+            });
+
+        });
+
     (function() {
 
       var width, height, largeHeader, canvas, ctx, circles, target, animateHeader = true;

@@ -6,10 +6,11 @@ using System.Net.Mail;
 
 public class newletterfrm : IHttpHandler {
     string Email = null;
-    public void ProcessRequest (HttpContext context) {
+    public void ProcessRequest (HttpContext context)
+    {
         try
         {
-            Email = context.Request.Form[0];
+            Email = context.Request["email"];
 
             string Sender = Email;
             string AdminMail = "sougandiraj@gmail.com";
