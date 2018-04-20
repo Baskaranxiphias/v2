@@ -78,6 +78,27 @@
 }
 
 
+/*-----------Roboto slap---------------------*/
+@font-face {
+    font-family: 'RobotoSlab-Thin';
+    src: url('assets/fonts/roboto_slap/RobotoSlab-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'RobotoSlab-Light';
+    src: url('assets/fonts/roboto_slap/RobotoSlab-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'RobotoSlab-Regular';
+    src: url('assets/fonts/roboto_slap/RobotoSlab-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'RobotoSlab-Bold';
+    src: url('assets/fonts/roboto_slap/RobotoSlab-Bold.ttf') format('truetype');
+}
+
 body {
     color: #464646;
     font-family: 'Montserrat', sans-serif;
@@ -108,7 +129,7 @@ HEADER TOP STYLE
     /* background-color: #04468e; */
     background: transparent;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     position: relative;
     z-index: 9;
 }
@@ -471,9 +492,15 @@ img {
     color: #DED6D6;
 }
 
+.home-banners .btn-white-shadow {
+    background: #FF5722;
+    color: #fff;
+    box-shadow: 1.5px 2.598px 20px 0px rgba( 124, 134, 224, 0.2) !important;
+}
+
 .btn-white-shadow {
-    background: #ffffff;
-    color: #4e8ec8;
+    background: #fff;
+    color: #000;
     box-shadow: 1.5px 2.598px 20px 0px rgba( 124, 134, 224, 0.2) !important;
 }
 
@@ -579,8 +606,10 @@ button:focus {
 
         .intro-section .intro-item p {
             margin-bottom: 25px;
-            font-family: 'Roboto-light',sans-serif;
+            font-family: 'RobotoSlab-Light',sans-serif;
             font-weight: 300;
+            line-height: 1.8;
+            text-align: center;
         }
 
         .intro-section .intro-item a {
@@ -1182,10 +1211,12 @@ button:focus {
     }
 
 .section-title p {
+    text-align: center;
     font-size: 16px;
     margin-bottom: 51px;
-    font-family: 'Roboto-light',sans-serif;
-    font-weight: 500;
+    font-family: 'RobotoSlab-Light', 'Sorts Mill Goudy', sans-serif;
+    line-height: 1.8;
+    font-weight: 300;
 }
 
 #screenshots .section-title p:first-child {
@@ -1231,8 +1262,9 @@ button:focus {
 }
 
 .about-details p {
-    font-family: 'Roboto-light',sans-serif;
-    font-weight: 500;
+    font-family: 'RobotoSlab-light',sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
 }
 
 .about-details .btn {
@@ -1708,9 +1740,15 @@ button:focus {
     background-image: url(assets/images/footer/bg-footer.png);
 }
 
+    #footer p, #footer span {
+        font-size: 1.4rem;
+        font-family: 'RobotoSlab-Light',sans-serif;
+    }
+
     #footer .footer-title {
         color: #fff;
-        font-family: 'Roboto-thin',sans-serif;
+        font-family: 'Roboto-Light',sans-serif;
+        font-weight: 600;
     }
 
     #footer .footer-logo {
@@ -1719,8 +1757,9 @@ button:focus {
 
     #footer .footer-intro {
         color: #fff;
-        font-family: 'Roboto-Light',sans-serif;
+        font-family: 'Robotoslab-Light',sans-serif;
         font-weight: 500;
+        font-size: 1.36rem;
     }
 
 
@@ -1762,7 +1801,12 @@ button:focus {
         }
 
     #footer .text-box-align {
-        border-radius: 2px;
+        border-radius: 25px;
+        border: 0px;
+        font-family: 'roboto-Light',sans-serif;
+        padding-left: 20px;
+        font-size: 1.3rem;
+        box-shadow: inset 0px 2px 0px 0px rgba(0, 0, 0, 0.12);
     }
 
 #footer-bottom {
@@ -2166,10 +2210,11 @@ button:focus {
 }
 
 .about .section-title p {
+    text-align: center !important;
     font-size: 16px;
     margin-bottom: 51px;
-    font-family: 'Roboto-light',sans-serif;
-    font-weight: 600;
+    font-family: 'RobotoSlab-light',sans-serif;
+    font-weight: 300;
 }
 
 
@@ -2242,8 +2287,9 @@ button:focus {
     .bg-third-block .featured-details p {
         font-size: 16px;
         margin-bottom: 10px;
-        font-family: 'Roboto-light',sans-serif;
-        font-weight: 500;
+        font-family: 'RobotoSlab-Light',sans-serif;
+        line-height: 1.8;
+        font-weight: 300;
     }
 
 /*.apps-craft-feature-section{
@@ -2944,7 +2990,7 @@ button:focus {
 
 .title {
     font-family: 'Roboto-thin',sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     position: relative;
     font-weight: 500;
     margin-top: 0;
@@ -3017,7 +3063,28 @@ button:focus {
 
 .section-header h2, .section-header p {
     text-align: center;
+    font-family: 'RobotoSlab-Light',sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 1.2em;
 }
+
+p, .panel-body {
+    text-align: left;
+    font-family: 'RobotoSlab-Light',sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 1.2em;
+}
+
+h5, h5 a {
+    text-align: left;
+    font-family: 'RobotoSlab-Light',sans-serif;
+    font-weight: 800;
+    line-height: 1.8;
+    font-size: 1.3em;
+}
+
 
 p.large {
     font-size: 128%;
@@ -3242,13 +3309,46 @@ p.large {
     color: #fff;
     line-height: 27px;
     font-size: 1.5rem;
-    font-weight: 100;
+    font-weight: 300;
+    font-family: 'Robotoslab-Light',sans-serif;
 }
 
 .sub-btn {
     padding: 10px 40px;
 }
 
-.padding-top-3{
-    padding-top:3rem;
+.padding-top-3 {
+    padding-top: 3rem;
+}
+
+.media-head-title a {
+    font-family: 'Roboto-Light',sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem !important;
+    color: #fff !important;
+}
+
+.media-head-title p span {
+    font-family: 'Roboto-Light',sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem !important;
+    color: #fff !important;
+}
+
+.padding-right-10 {
+    padding-right: 10px;
+}
+
+.subscribe-txt {
+    color: #fff;
+    font-family: 'Roboto-Thin',sans-serif;
+    font-weight: 600;
+}
+
+.width-65 {
+    width: 65px;
+}
+
+.margin-bottom-5 {
+    margin-bottom: 5px;
 }
