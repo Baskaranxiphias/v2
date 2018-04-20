@@ -2782,6 +2782,7 @@ button:focus {
 
 .primary-contact .address {
     margin: 35px 0 15px;
+    font-size: 1.2em;
 }
 
 .primary-contact .website {
@@ -3313,6 +3314,7 @@ p.large {
     font-family: 'Robotoslab-Light',sans-serif;
 }
 
+
 .sub-btn {
     padding: 10px 40px;
 }
@@ -3352,3 +3354,26 @@ p.large {
 .margin-bottom-5 {
     margin-bottom: 5px;
 }
+
+
+.price-line {
+    padding: 10px;
+    border: 1px solid #7fbcf6;
+    border-radius: 5px;
+    background-color: rgba(0, 131, 255, 0.11);
+}
+
+.padding-10 {
+    padding: 10px;
+}
+
+
+.price-line-txt {
+    color: #0075c1;
+    font-weight: 700;
+}
+
+.primary-contact p {
+    font-size: 1.3em;
+}
+
