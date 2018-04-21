@@ -569,6 +569,16 @@ button:focus {
             transition: background-color 2s ease-out;
         }
 
+            .intro-section .intro-item.red:hover h3.title, .intro-section .intro-item.yellow:hover h3.title, .intro-section .intro-item.green:hover h3.title {
+                /* background: #88dcf6; */
+                border-radius: 6px;
+                color: #fff;
+                -webkit-transition: background-color 2s ease-out;
+                -moz-transition: background-color 2s ease-out;
+                -o-transition: background-color 2s ease-out;
+                transition: background-color 2s ease-out;
+            }
+
         .intro-section .intro-item.yellow:hover {
             box-shadow: 1.5px 2.598px 25px 0px rgba( 124, 134, 224, 0.1);
             /* background: #88dcf6; */
@@ -609,7 +619,7 @@ button:focus {
             font-family: 'RobotoSlab-Light',sans-serif;
             font-weight: 300;
             line-height: 1.8;
-            text-align: center;
+            text-align: justify;
         }
 
         .intro-section .intro-item a {
@@ -1211,7 +1221,7 @@ button:focus {
     }
 
 .section-title p {
-    text-align: center;
+    text-align: justify;
     font-size: 16px;
     margin-bottom: 51px;
     font-family: 'RobotoSlab-Light', 'Sorts Mill Goudy', sans-serif;
@@ -1326,7 +1336,7 @@ button:focus {
     }
 
 .featured-section-2-details .media-left .thumb {
-    box-shadow: 0.5px 0.866px 15px 0px rgba( 124, 134, 224, 0.3);
+    box-shadow: 0.5px 0.866px 15px 0px rgb(124, 134, 224);
     border-radius: 50%;
     height: 50px;
     width: 50px;
@@ -3376,4 +3386,3 @@ p.large {
 .primary-contact p {
     font-size: 1.3em;
 }
-
