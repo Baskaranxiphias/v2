@@ -87,7 +87,7 @@ export class AppComponent {
                     //$("#buynow-kiosk").modal("toggle");
                     jQuery.ajax({
                         type: "GET",
-                        url: "http://xiphiastec.com/atsiwebsite.ashx",
+                        url: "https://xiphiastec.com/atsiwebsite.ashx",
                         data: { 'name': name, 'phoneNo': phon, 'email': emil, 'comment1': cmmt},
                         success: function (data) {
 
@@ -110,7 +110,7 @@ export class AppComponent {
                 else {
                     jQuery.ajax({
                         type: "GET",
-                        url: "http://xiphiastec.com/atsiwebsite.ashx",
+                        url: "https://xiphiastec.com/atsiwebsite.ashx",
 
                         data: { 'otp': otp },
                         success: function (data) {
@@ -142,7 +142,7 @@ export class AppComponent {
 
                 jQuery.ajax({
                     type: "GET",
-                    url: "http://xiphiastec.com/atsiwebsite.ashx",
+                    url: "https://xiphiastec.com/atsiwebsite.ashx",
 
                     data: {},
                     success: function (data) {
