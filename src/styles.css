@@ -2036,11 +2036,56 @@ button:focus {
     .navbar-align .width-15rem {
         width: 10rem;
     }
+
+    .featured-bg {
+		display: none;
+	}
+	.left-featured-details {
+		left: 0;
+		top: 0;
+		position: inherit;
+	}
+	.left-featured-details .featured-details-one,
+	.left-featured-details .featured-details-two,
+	.left-featured-details .featured-details-three{
+		padding: 0;
+	}
+	.right-featured-details {
+		right: 0;
+		top: 0;
+		position: inherit;
+	}
+	.right-featured-details .featured-details-one,
+	.right-featured-details .featured-details-two,
+	.right-featured-details .featured-details-three{
+		padding: 0;
+	}
+	.left-featured-details .media-left .thumb {
+		margin-right: 0;
+	}
+	.right-featured-details .media-left .thumb {
+		margin-left: 0;
+	}
+	.left-featured-details .media-left {
+	    padding-left: 6px;
+	}
+	.right-featured-details .media-left {
+	    padding-right: 6px;
+    }
+    
+    .home2-first-bg {
+        background-position: 50% -300px;
+    }
+
 }
 
 @media(max-width:768px) {
     .width-full {
         width: 100%;
+    }
+
+    .home2-first-bg {
+        background-position: 60% -490px;
     }
 }
 

@@ -42,10 +42,11 @@
         "../node_modules/lg-hash/dist/lg-hash.js",
         "../node_modules/wow.js/dist/wow.js",
         "../node_modules/skrollr/dist/skrollr.min.js",
+        "../node_modules/emailjs/email.js",
         "../node_modules/aos/dist/aos.js",
-        "../node_modules/gsap/src/minified/TweenMax.min.js",
-        "../node_modules/jssor-slider/js/jssor.slider.min.js",
-        "../node_modules/frame-carousel/dist/jquery.frame-carousel.min.js"
+        "../node_modules/gsap/src/minified/TweenMax.min.js"
+   
+        
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

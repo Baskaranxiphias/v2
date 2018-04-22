@@ -2,6 +2,10 @@ import { Component } from '@angular/core';
 import {DomSanitizer, SafeHtml} from '@angular/platform-browser';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
+declare var require: any;
+declare var email: any;
+declare var err: any;
+
 declare var $: any;
 declare var jQuery: any;
 @Component({
@@ -26,7 +30,45 @@ export class AppComponent {
 
     ngOnInit() {
 
-
+        $('#emailUs').click(function () {
+            var name = $("#Name").val();
+                    var emil = $("#Emails").val();
+                    var cmmt = $("#Problem").val();
+        
+            var email   = require("emailjs/email");
+            var server 	= email.server.connect({
+               user:    "baskaran.tripleh@gmail.com", 
+               password:"BasKrish!(()1991", 
+               host: 'smtp.mailgun.com',
+               ssl:false,
+               port:587
+                 
+            });
+             
+            // send the message and get a callback with an error or details of the message that was sent
+            server.send({
+               text:    "hi", 
+               from:    "baskaran.tripleh@gmail.com",  
+               to:      "baskaran@xiphiastec.com",
+               cc:      "baskaran@xiphiastec.com",
+               subject: "testing emailjs"
+            }, function(err) { 
+                if(err){
+                    console.log(err);
+                }else{
+                    console.log("success");
+                }
+             });
+        
+        
+            });
+        
+        
+        
+        
+        
+        
+        
         this.gcsesearch = this.sanitizer.bypassSecurityTrustHtml("<gcse:search></gcse:search>");
 
         var cx = '009773623900514842048:yjhaoizivqm';
@@ -70,89 +112,89 @@ export class AppComponent {
 
         //});
 
-        jQuery(function () {
-            $('#emailUs').click(function () {
-                var name = $("#Name").val();
-                var emil = $("#Emails").val();
-                var phon = $("#Mobile").val();
-                var kios = "Health Care Kiosk";
-                var cmmt = $("#comment").val();
+        // jQuery(function () {
+        //     $('#emailUs').click(function () {
+        //         var name = $("#Name").val();
+        //         var emil = $("#Emails").val();
+        //         var phon = $("#Mobile").val();
+        //         var kios = "Health Care Kiosk";
+        //         var cmmt = $("#comment").val();
 
-                if (name == "" || phon == "" || emil == "") {
-                    alert("Please Enter all fields");
-                    //$('.modal.fade').removeAttr('id');
-                }
+        //         if (name == "" || phon == "" || emil == "") {
+        //             alert("Please Enter all fields");
+        //             //$('.modal.fade').removeAttr('id');
+        //         }
 
-                else {
-                    //$("#buynow-kiosk").modal("toggle");
-                    jQuery.ajax({
-                        type: "GET",
-                        url: "https://xiphiastec.com/atsiwebsite.ashx",
-                        data: { 'name': name, 'phoneNo': phon, 'email': emil, 'comment1': cmmt},
-                        success: function (data) {
+        //         else {
+        //             //$("#buynow-kiosk").modal("toggle");
+        //             jQuery.ajax({
+        //                 type: "GET",
+        //                 url: "https://xiphiastec.com/atsiwebsite.ashx",
+        //                 data: { 'name': name, 'phoneNo': phon, 'email': emil, 'comment1': cmmt},
+        //                 success: function (data) {
 
-                            $("#buynow-kiosk").modal("toggle");
-                            $("#otpOption").modal("show");
+        //                     $("#buynow-kiosk").modal("toggle");
+        //                     $("#otpOption").modal("show");
 
-                        }
-                    });
-                }
-
-
-            });
+        //                 }
+        //             });
+        //         }
 
 
-            $('#confirmOtp').click(function () {
-                var otp = $("#otpValue").val();
-                if (otp == "") {
-                    alert("Please Enter the fields");
-                }
-                else {
-                    jQuery.ajax({
-                        type: "GET",
-                        url: "https://xiphiastec.com/atsiwebsite.ashx",
-
-                        data: { 'otp': otp },
-                        success: function (data) {
-
-                            if (data == "") {
-
-                                alert("Please Enter Correct OTP");
-
-                                $("#otp2").val(" ");
-
-                            }
-                            else if (data != null) {
-                                debugger;
-                                //window.location="http://localhost:63033/thankyou.html";
-                                window.location.href = "thankyou.html";
+        //     });
 
 
-                            }
+        //     $('#confirmOtp').click(function () {
+        //         var otp = $("#otpValue").val();
+        //         if (otp == "") {
+        //             alert("Please Enter the fields");
+        //         }
+        //         else {
+        //             jQuery.ajax({
+        //                 type: "GET",
+        //                 url: "https://xiphiastec.com/atsiwebsite.ashx",
+
+        //                 data: { 'otp': otp },
+        //                 success: function (data) {
+
+        //                     if (data == "") {
+
+        //                         alert("Please Enter Correct OTP");
+
+        //                         $("#otp2").val(" ");
+
+        //                     }
+        //                     else if (data != null) {
+        //                         debugger;
+        //                         //window.location="http://localhost:63033/thankyou.html";
+        //                         window.location.href = "thankyou.html";
+
+
+        //                     }
 
                          
 
 
-                        }
-                    });
-                }
-            });
+        //                 }
+        //             });
+        //         }
+        //     });
 
-            $('#resendOtp').click(function () {
+        //     $('#resendOtp').click(function () {
 
-                jQuery.ajax({
-                    type: "GET",
-                    url: "https://xiphiastec.com/atsiwebsite.ashx",
+        //         jQuery.ajax({
+        //             type: "GET",
+        //             url: "https://xiphiastec.com/atsiwebsite.ashx",
 
-                    data: {},
-                    success: function (data) {
+        //             data: {},
+        //             success: function (data) {
 
-                    }
-                });
-            });
+        //             }
+        //         });
+        //     });
 
 
-        });
+        // });
 
 
 
