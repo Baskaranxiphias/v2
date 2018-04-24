@@ -11,7 +11,7 @@ export class BulkEmailComponent implements OnInit {
   
     constructor(meta: Meta, title: Title) {
 
-        title.setTitle('Bulk Email Sending Software | Bulk and Mass Mail Software-A.T.S.I');
+        title.setTitle('Bulk Email Sending Software | Bulk and Mass Mail Software-A.T.S.I.');
     
         meta.addTags([
           { name: 'author',   content: 'Mr.Rohit Kumar'},

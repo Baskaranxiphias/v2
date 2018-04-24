@@ -11,12 +11,12 @@ export class FeeManagementComponent implements OnInit {
   
     constructor(meta: Meta, title: Title) {
 
-        title.setTitle('School Fee Management Software | School Fees Collection Software');
+        title.setTitle('School Fee Management System Software | School Fees Collection Software');
     
         meta.addTags([
           { name: 'author',   content: 'Mr.Rohit Kumar'},
           { name: 'keywords', content: 'school fee software,fee management software,school fee management system,fee management system,school fees collection software,school fee management software'},
-          { name: 'description', content: 'One of the key features of ATSI is School Fee Management System that calculates the fees and fines for every student with complete details. As a part of School Fees Collection Software, it facilitates the parents to set reminder for making payment before the due date. Also, ATSI has integrated multiple modes of payments for fees payment.' }
+          { name: 'description', content: 'One of the key features of A.T.S.I. is School Fee Management System that calculates the fees and fines for every student with complete details. As a part of School Fees Collection Software, it facilitates the parents to set reminder for making payment before the due date. Also, ATSI has integrated multiple modes of payments for fees payment.' }
         ]);
     
       }

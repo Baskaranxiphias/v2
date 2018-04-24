@@ -62,7 +62,9 @@
 </nav>
 
 <router-outlet (activate)="onActivate($event)"></router-outlet>
-
+<div class="atsi-loader">
+    <div><i class="fa fa-spinner fa-spin atsi-loader-icon " aria-hidden="true"></i></div> 
+</div>
 <section id="footer">
     <div class="container">
         <div class="row">
@@ -112,24 +114,24 @@
                     </div>
                     <div class="col-xs-12">
                         <div class="text-justify footer-module">
-                            <a routerLink="/libraryManagement">Library Management System |</a>
-                            <a routerLink="/hrms">Human Resource Management System | </a>
-                            <a routerLink="/erpSoftware">ERP Software |</a>
-                            <a routerLink="/attendanceManagement">Attendance Management System |</a>
-                            <a routerLink="/syllabusManagement">Syllabus Management System |</a>
-                            <a routerLink="/empPyroll">Employee Management System |</a>
-                            <a routerLink="/payrollManagement">Payroll management System |</a>
-                            <a routerLink="/schoolManagement"> School Management System India |</a>
-                            <a routerLink="/timetable">Time Table Management System |</a>
-                            <a routerLink="/hostelMangement">Hostel Management System |</a>
-                            <a routerLink="/feeManagement"> Fee Management System|</a>
-                            <a routerLink="/noticeBoard">Notice Board Software |</a>
-                            <a routerLink="/bulksms">Bulk SMS System |</a>
-                            <a routerLink="/bulkEmail">Bulk Email System |</a>
-                            <a routerLink="/onlineExamination">online Examination System |</a>
-                            <a routerLink="/inventoryMangement">Inventory Mangement System |</a>
-                            <a routerLink="/transport"> Transport Management System |</a>
-                            <a routerLink="/accountManagement"> Account Management System |</a>
+                            <a routerLink="/online-library-management-software-india">Library Management System |</a>
+                            <a routerLink="/human-resource-management-software-india">Human Resource Management System | </a>
+                            <a routerLink="/School-Management-ERP-Software-india">ERP Software |</a>
+                            <a routerLink="/online-student-attendance-management-system">Attendance Management System |</a>
+                            <a routerLink="/web-based-syllabus-management-system">Syllabus Management System |</a>
+                            <a routerLink="/employee-management-system-software">Employee Management System |</a>
+                            <a routerLink="/online-payroll-Management-System-software">Payroll management System |</a>
+                            <a routerLink="/school-information-management-system-india"> School Management System India |</a>
+                            <a routerLink="/school-timetable-tenerator-system-software">Time Table Management System |</a>
+                            <a routerLink="/hostel-management-system-software-india">Hostel Management System |</a>
+                            <a routerLink="/school-fee-management-system-software"> Fee Management System|</a>
+                            <a routerLink="/school-digital-notice-board-software">Notice Board Software |</a>
+                            <a routerLink="/online-bulk-sms-sender-software">Bulk SMS System |</a>
+                            <a routerLink="/bulk-mass-email-sending-software">Bulk Email System |</a>
+                            <a routerLink="/online-examination-management-system-software">online Examination System |</a>
+                            <a routerLink="/stock-inventory-management-software">Inventory Mangement System |</a>
+                            <a routerLink="/gps-vehicle-tracking-system"> Transport Management System |</a>
+                            <!--<a routerLink="/accountManagement"> Account Management System |</a>-->
                         </div>
                     </div>
                 </div>
@@ -143,7 +145,7 @@
                         <p class="subscribe-txt">Subscribe our newsletter</p>
                         <form>
                             <div class="form-group">
-                                <input type="email" name="email" id="Email" class="form-control text-box-align" placeholder="Enter Your Email Address">
+                                <input type="email" name="email" id="newsEmail" class="form-control text-box-align" placeholder="Enter Your Email Address">
                             </div>
                             <div class="text-left">
                                 <button type="button" class="btn btn-default btn-block sub-btn" id="newLetter">Submit</button>
@@ -232,7 +234,7 @@
 </section>
 
 <div id="searchOption" class="modal fade" role="dialog">
-    <div class="modal-dialog width-75" >
+    <div class="modal-dialog width-75">
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
@@ -256,15 +258,16 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
+                <h4 class="modal-title">OTP</h4>
             </div>
             <div class="modal-body">
-               <input type="text" class="btn btn-primary" id="otpValue" placeholder="Enter Your OTP">
-              
+                <label>Enter Your Otp</label>
+                <input type="text" class="form-control" id="otpValue" placeholder="Enter Your OTP">
+
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" id="resendOtp">Resend</button>
-                <button type="button" class="btn btn-default" id="confirmOtp">Submit</button>
+               <!-- <button type="button" class="btn btn-danger otp-btn-size" id="resendOtp">Resend</button>-->
+                <button type="button" class="btn btn-primary otp-btn-size" id="confirmOtp">Submit</button>
             </div>
         </div>
 

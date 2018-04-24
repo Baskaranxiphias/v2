@@ -10,13 +10,13 @@ export class InventoryComponent implements OnInit {
 
     constructor(meta: Meta, title: Title) {
 
-        title.setTitle('Stock Inventory Management Software | Store Stock Control Software');
+        title.setTitle('Stock Inventory Management Software | Stock Maintenance Software');
     
         meta.addTags([
           { name: 'author',   content: 'Mr.Rohit Kumar'},
           {
               name: 'keywords', content: 'stock management software,best inventory management software,inventory control software,stock inventory software,store inventory software,'},
-          { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
+          { name: 'description', content: 'The stock management software has been designed to help the administration department take count of the inventory in a more refined manner. It records all transactions when they are procured, sold or are stored in the inventory' }
         ]);
     
       }

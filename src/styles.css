@@ -2038,45 +2038,52 @@ button:focus {
     }
 
     .featured-bg {
-		display: none;
-	}
-	.left-featured-details {
-		left: 0;
-		top: 0;
-		position: inherit;
-	}
-	.left-featured-details .featured-details-one,
-	.left-featured-details .featured-details-two,
-	.left-featured-details .featured-details-three{
-		padding: 0;
-	}
-	.right-featured-details {
-		right: 0;
-		top: 0;
-		position: inherit;
-	}
-	.right-featured-details .featured-details-one,
-	.right-featured-details .featured-details-two,
-	.right-featured-details .featured-details-three{
-		padding: 0;
-	}
-	.left-featured-details .media-left .thumb {
-		margin-right: 0;
-	}
-	.right-featured-details .media-left .thumb {
-		margin-left: 0;
-	}
-	.left-featured-details .media-left {
-	    padding-left: 6px;
-	}
-	.right-featured-details .media-left {
-	    padding-right: 6px;
+        display: none;
     }
-    
+
+    .left-featured-details {
+        left: 0;
+        top: 0;
+        position: inherit;
+    }
+
+        .left-featured-details .featured-details-one,
+        .left-featured-details .featured-details-two,
+        .left-featured-details .featured-details-three {
+            padding: 0;
+        }
+
+    .right-featured-details {
+        right: 0;
+        top: 0;
+        position: inherit;
+    }
+
+        .right-featured-details .featured-details-one,
+        .right-featured-details .featured-details-two,
+        .right-featured-details .featured-details-three {
+            padding: 0;
+        }
+
+    .left-featured-details .media-left .thumb {
+        margin-right: 0;
+    }
+
+    .right-featured-details .media-left .thumb {
+        margin-left: 0;
+    }
+
+    .left-featured-details .media-left {
+        padding-left: 6px;
+    }
+
+    .right-featured-details .media-left {
+        padding-right: 6px;
+    }
+
     .home2-first-bg {
         background-position: 50% -300px;
     }
-
 }
 
 @media(max-width:768px) {
@@ -2229,11 +2236,12 @@ button:focus {
 }
 
 .blue-txt {
-    color: #0054bd;
+    color: #4993d2;
 }
 
-
-
+    .blue-txt a , a.blue-txt{
+        text-decoration: none;
+    }
 
 
 /*About*/
@@ -3430,4 +3438,34 @@ p.large {
 
 .primary-contact p {
     font-size: 1.3em;
+}
+
+.otp-btn-size {
+    padding: 10px 30px;
+    border-radius: 3px;
+}
+
+.thankyou p {
+    text-align: center;
+}
+
+.atsi-loader {
+    position: absolute;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    top: 0;
+    z-index: 9999;
+    display: none;
+}
+
+.atsi-loader-icon {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 44%;
+    color: #fff;
+    font-size: 5rem;
 }

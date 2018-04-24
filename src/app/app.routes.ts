@@ -35,6 +35,8 @@ import {PrivacyPolicyComponent}from'./privacy-policy/privacy-policy.component';
 import {DisclaimerComponent}from'./disclaimer/disclaimer.component';
 import {SitemapComponent}from'./sitemap/sitemap.component';
 import {BlogComponent}from'./blog/blog.component';
+import {ThankyouComponent}from'./thankyou/thankyou.component';
+
 
 export const routes: Routes = [
     { path: '', component: HomeComponent, },
@@ -45,37 +47,38 @@ export const routes: Routes = [
     { path: 'clients', component: ClientsComponent, },
     { path: 'testimonials', component: TestimonialComponent, },
     { path: 'contact', component: ContactComponent, }, 
-    { path: 'erpSoftware', component: ErpSoftwareComponent, },
-    { path: 'payrollManagement', component: PayrollManagementComponent, },
-    { path: 'libraryManagement', component: LibraryComponent, },
-    { path: 'attendanceManagement', component: AttendanceComponent, },
-    { path: 'syllabusManagement', component: CourseComponent, },
-    { path: 'empPyroll', component: EmpPayrollComponent, },
-    { path: 'hrms', component: HrmsComponent, },
-    { path: 'schoolManagement', component: SchoolComponent, },
-    { path: 'timetable', component: TimeTableComponent, },
-    { path: 'hostelMangement', component: HostelComponent, },
-    { path: 'onlineExamination', component: OnlineExamComponent, },
+    { path: 'School-Management-ERP-Software-india', component: ErpSoftwareComponent, },
+    { path: 'online-payroll-Management-System-software', component: PayrollManagementComponent, },
+    { path: 'online-library-management-software-india', component: LibraryComponent, },
+    { path: 'Online-Student-Attendance-Management-System', component: AttendanceComponent, },
+    { path: 'web-based-Syllabus-Management-System', component: CourseComponent, },
+    { path: 'employee-management-system-software', component: EmpPayrollComponent, },
+    { path: 'human-resource-management-software-india', component: HrmsComponent, },
+    { path: 'school-information-management-system-india', component: SchoolComponent, },
+    { path: 'school-timetable-tenerator-system-software', component: TimeTableComponent, },
+    { path: 'hostel-management-system-software-india', component: HostelComponent, },
+    { path: 'online-examination-management-system-software', component: OnlineExamComponent, },
     { path: 'deviceEnable', component: DeviceEnableComponent, },
-    { path: 'feeManagement', component: FeeManagementComponent, },
-    { path: 'transport', component: TransportComponent, },
+    { path: 'school-fee-management-system-software', component: FeeManagementComponent, },
+    { path: 'gps-vehicle-tracking-system', component: TransportComponent, },
     { path: 'accountManagement', component: AccountComponent, },
-    { path: 'noticeBoard', component: NoticeboardComponent, },
-    { path: 'bulksms', component: BulkSmsComponent, },
-    { path: 'bulkEmail', component: BulkEmailComponent, },
-    { path: 'inventoryMangement', component: InventoryComponent, },
+    { path: 'school-digital-notice-board-software', component: NoticeboardComponent, },
+    { path: 'online-bulk-sms-sender-software', component: BulkSmsComponent, },
+    { path: 'bulk-mass-email-sending-software', component: BulkEmailComponent, },
+    { path: 'stock-inventory-management-software', component: InventoryComponent, },
     { path: 'sportsMangement', component: SportsComponent, },
     { path: 'terms', component: TermsComponent, },
     { path: 'returnPolicy', component: ReturnPolicyComponent, },
     { path: 'privacyPolicy', component: PrivacyPolicyComponent, },
     { path: 'disclaimer', component: DisclaimerComponent, },
     { path: 'sitemap', component: SitemapComponent, },
-    { path: 'blog', component: BlogComponent, }
+    { path: 'blog', component: BlogComponent, },
+    { path: 'thankyou', component: ThankyouComponent, }
 ];
 
 @NgModule({
     imports: [
-        RouterModule.forRoot(routes,{ useHash: true})
+        RouterModule.forRoot(routes)
     ],
     exports: [
         RouterModule

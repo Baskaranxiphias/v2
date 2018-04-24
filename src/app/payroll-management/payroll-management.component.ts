@@ -10,12 +10,12 @@ export class PayrollManagementComponent implements OnInit {
 
     constructor(meta: Meta, title: Title) {
 
-        title.setTitle('Payroll Management');
+        title.setTitle('Best Online Payroll Management System Software - A.T.S.I.');
 
         meta.addTags([
             { name: 'author', content: 'Mr.Rohit Kumar' },
-            { name: 'keywords', content: 'Payroll Management' },
-            { name: 'description', content: 'Payroll Management' }
+            { name: 'keywords', content: 'online payroll software,payroll system software,payroll processing software,payroll software india,payroll management system,payroll management services,best payroll software india,payroll management process,salary management system,payroll salary software,online salary management system' },
+            { name: 'description', content: 'A fully functional Online Payroll Management System is integrated into the software to ease the burden on HR department. The payroll module is fully compliant with the rules as laid down by Law' }
         ]);
 
     }

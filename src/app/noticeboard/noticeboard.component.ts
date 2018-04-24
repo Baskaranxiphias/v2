@@ -11,12 +11,12 @@ export class NoticeboardComponent implements OnInit {
   
     constructor(meta: Meta, title: Title) {
 
-        title.setTitle('Digital Notice Board Software-A.T.S.I');
+        title.setTitle('School Digital Notice Board Software - A.T.S.I.');
     
         meta.addTags([
           { name: 'author',   content: 'Mr.Rohit Kumar'},
           { name: 'keywords', content: 'notice board software,digital notice board software'},
-          { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
+          { name: 'description', content: 'A.T.S.I. is the leading provider of notice board software, XIPHIAS ATSI provides notice software, digital notice board software, copyright notice software, engineering change notice software' }
         ]);
     
       }

@@ -11,7 +11,7 @@ export class ErpSoftwareComponent implements OnInit {
  
     constructor(meta: Meta, title: Title) {
 
-        title.setTitle('School Management ERP Software India| Cloud Education ERP Software');
+        title.setTitle('School Management ERP Software India | Cloud Education ERP Software');
     
         meta.addTags([
           { name: 'author',   content: 'Mr.Rohit Kumar'},

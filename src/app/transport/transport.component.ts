@@ -16,7 +16,7 @@ export class TransportComponent implements OnInit {
         meta.addTags([
           { name: 'author',   content: 'Mr.Rohit Kumar'},
           { name: 'keywords', content: 'gps tracking system,gps vehicle tracking system,gps based vehicle tracking system,vehicle gps system,vehicle management system'},
-          { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
+          { name: 'description', content: 'Now a days school provides transportation facilities to student for their enhanced security and manage the school time. In the A.T.S.I.we cover the transportation module for the tracking and maintain the transportation particulars.' }
         ]);
     
       }

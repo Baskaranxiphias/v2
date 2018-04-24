@@ -24,28 +24,113 @@ export class ContactComponent implements OnInit {
 
     ngOnInit() {
 
+      
+
 
         jQuery(function () {
-          
             $('#emailUs').click(function () {
+                $(".atsi-loader").show();
                 var name = $("#Name").val();
-                var emil = $("#EmailContact").val();
-                var cmmt = $("#Problem").val();
+                var emil = $("#Emails").val();
+                var phon = $("#Mobile").val();
+
+                var cmmt = $("#comment").val();
+
+                if (name == "" || phon == "" || emil == "") {
+                    $(".atsi-loader").hide();
+                    alert("Please Enter all fields");
+                }
+
+                else {
+
+                    jQuery.ajax({
+                        type: "GET",
+                        url: "https://www.atsi.in/atsi/handlers/BuyNowHandler.ashx",
+                        data: { 'name': name, 'phoneNo': phon, 'email': emil, 'comment1': cmmt },
+                    }).fail(function () {
+                        $(".atsi-loader").hide();
+                        $("#otpOption").modal("show", { backdrop: 'static', keyboard: false });
+                    });
+
+                }
+
+
+            });
+
+
+            $('#confirmOtp').click(function () {
+                $(".atsi-loader").show();
+                var otp = $("#otpValue").val();
+                if (otp == "") {
+                    $(".atsi-loader").hide();
+                    alert("Please Enter the fields");
+                }
+                else {
+                    jQuery.ajax({
+                        type: "GET",
+                        url: "https://www.atsi.in/atsi/handlers/BuyNowHandler.ashx",
+
+                        data: { 'otp': otp },
+                        //success: function (data) {
+
+                        //    if (data == "") {
+
+                        //        alert("Please Enter Correct OTP");
+
+                        //        $("#otp2").val(" ");
+
+                        //    }
+                        //    else if (data != null) {
+                        //        debugger;
+                        //        //window.location="http://localhost:63033/thankyou.html";
+                        //        window.location.href = "thankyou.html";
+
+                        //    }
+
+
+
+
+                        //}
+
+
+                    }).fail(function (data) {
+
+                        if (data == "") {
+                            $(".atsi-loader").hide();
+                            alert("Please Enter Correct OTP");
+
+                            $("#otp2").val(" ");
+
+                        }
+                        else if (data != null) {
+                            $(".atsi-loader").hide();
+                            $("#otpOption").modal("hide");
+                            window.location.href = "#/thankyou";
+
+                        }
+
+                        //$(".atsi-loader").hide();
+                        //$("#otpOption").modal("show");
+                    });
+                }
+            })
+
+            $('#resendOtp').click(function () {
 
                 jQuery.ajax({
-                    type: "POST",
-                    url: 'https://atsi.in/handlers/Contact_us.ashx',
+                    type: "GET",
+                    url: "https://www.atsi.in/atsi/handlers/BuyNowHandler.ashx",
 
-                    data: { 'name': name, 'email': emil, 'comment': cmmt },
+                    data: {},
                     success: function (data) {
-                        alert("Success");
-                        //$("#support").modal("toggle");
-                        //$("#otpOption").modal("show");
+
                     }
                 });
             });
 
+
         });
+
 
     (function() {
 

@@ -16,7 +16,7 @@ export class HrmsComponent implements OnInit {
         meta.addTags([
           { name: 'author',   content: 'Mr.Rohit Kumar'},
           { name: 'keywords', content: 'human resources software,hr management software,hrm software,hr management system,human resource management system,human resource management software,hrms system,online hr software,human resource management system software,hr software india'},
-          { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
+          { name: 'description', content: 'The human resource software is a vital part of any institution, as it stores all necessary information of the employee. All documents, personal information, address for communication, medical information, salary details are all stored on the Human Resource Management System Software' }
         ]);
     
       }

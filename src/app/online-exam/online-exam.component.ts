@@ -16,7 +16,7 @@ export class OnlineExamComponent implements OnInit {
         meta.addTags([
           { name: 'author',   content: 'Mr.Rohit Kumar'},
           { name: 'keywords', content: 'online exam system,online exam software,online examination software,examination system,online examination system,examination management system'},
-          { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
+          { name: 'description', content: 'Online Examination Management System also allows you to enter the subject wise marks obtained by each student and based on the exam grading rule system automatically generates the grade for the marks obtained' }
         ]);
     
       }

@@ -41,7 +41,8 @@ import { ReturnPolicyComponent } from './return-policy/return-policy.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { DisclaimerComponent } from './disclaimer/disclaimer.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
-import { BlogComponent } from './blog/blog.component'
+import { BlogComponent } from './blog/blog.component';
+import { ThankyouComponent } from './thankyou/thankyou.component'
 
 @NgModule({
     declarations: [
@@ -79,6 +80,7 @@ import { BlogComponent } from './blog/blog.component'
         DisclaimerComponent,
         SitemapComponent,
         BlogComponent,
+        ThankyouComponent,
       
     ],
     imports: [

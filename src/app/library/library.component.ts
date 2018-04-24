@@ -17,7 +17,7 @@ export class LibraryComponent implements OnInit {
           { name: 'author',   content: 'Mr.Rohit Kumar'},
           {
               name: 'keywords', content: 'library management system,online library management system,library management software,library management system software,digital library software, library software in india, library management, library management system'},
-          { name: 'description', content: 'This is my Angular SEO-based App, enjoy it!' }
+          { name: 'description', content: 'library management software reduces manpower and maintains accurate number of outgoing and incoming of book records as well as member details. The library automation management system manages records of all transactions of books, magazines, journals made within the library premises' }
         ]);
     
       }
