@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
-import {HashLocationStrategy, LocationStrategy} from '@angular/common';
+import {PathLocationStrategy, LocationStrategy} from '@angular/common';
 
 
 import { AppComponent } from './app.component';
@@ -89,7 +89,7 @@ import { ThankyouComponent } from './thankyou/thankyou.component'
         FormsModule,
         HttpModule,
     ],
-    providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+    providers: [{ provide: LocationStrategy, useClass: PathLocationStrategy}],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
