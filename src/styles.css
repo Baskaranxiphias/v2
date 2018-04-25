@@ -138,7 +138,7 @@ header.header-top-area.corner-shape:after {
     display: none;
 }
 
-.header-top-area:after {
+/*.header-top-area:after {
     position: absolute;
     content: '';
     bottom: 0;
@@ -148,7 +148,7 @@ header.header-top-area.corner-shape:after {
     border-bottom: 250px solid #589ce4;
     border-left: 250px solid transparent;
     z-index: -1;
-}
+}*/
 
 .header-top-left a {
     text-decoration: none;
@@ -276,7 +276,7 @@ header.header-top-area.corner-shape:after {
             width: 2px;
             height: 10px;
             content: "";
-            background-color: #43566B;
+            background-color: #fff;
         }
 
         .header-top-right ul li:first-child:after {
@@ -339,11 +339,11 @@ NAVIGATION STYLE
     }
 
         .navbar-align .navbar-nav > li > a:hover {
-            color: #1D62AC;
+            color: #8d60eb;
         }
 
 .active {
-    color: #1D62AC !important;
+    color: #8a62eb !important;
     font-weight: 900;
 }
 
@@ -365,14 +365,23 @@ NAVIGATION STYLE
 /* Home */
 
 /*** home Two bg ***/
-.home2-first-bg {
+/*.home2-first-bg {
     background-image: url(assets/images/bg/home2-first-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 79% 0px;
     margin-top: -17%;
     padding-top: 20%;
+}*/
+.home2-first-bg {
+    background-image: url('assets/images/banner/purple.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 79% 0px;
+    margin-top: -17%;
+    padding-top: 20%;
 }
+
 
 .home2-second-bg {
     background-image: url(assets/images/bg/home2-second-bg.png);
@@ -493,14 +502,17 @@ img {
 }
 
 .home-banners .btn-white-shadow {
-    background: #FF5722;
+    /*background: #7b60f2;*/
     color: #fff;
+    -webkit-box-shadow: 1.5px 2.598px 20px 0px rgba( 124, 134, 224, 0.2) !important;
     box-shadow: 1.5px 2.598px 20px 0px rgba( 124, 134, 224, 0.2) !important;
+    /* border: 1px solid #7317ff; */
+    background: linear-gradient( 135deg, #5f2be6 10%, #ff00c7 100%);
 }
 
 .btn-white-shadow {
     background: #fff;
-    color: #000;
+    color: #8e4fff;
     box-shadow: 1.5px 2.598px 20px 0px rgba( 124, 134, 224, 0.2) !important;
 }
 
@@ -611,7 +623,7 @@ button:focus {
             font-size: 24px;
             margin-bottom: 30px;
             font-family: 'Roboto-thin',sans-serif;
-            font-weight: 600;
+            font-weight: 300;
         }
 
         .intro-section .intro-item p {
@@ -1206,7 +1218,7 @@ button:focus {
     font-weight: 500;
     margin-bottom: 49px;
     margin-top: 0;
-    color: #0268bf;
+    color: #8e4fff;
 }
 
     .section-title .title:after {
@@ -1214,7 +1226,7 @@ button:focus {
         content: '';
         height: 1px;
         width: 70px;
-        background: #5a90e3;
+        background: #8e4fff;
         bottom: -23px;
         left: 50%;
         margin-left: -35px;
@@ -1459,7 +1471,7 @@ button:focus {
         }
 
     .demo-gallery > ul > li a:hover .demo-gallery-poster {
-        background-color: rgba(114, 170, 244, 0.68);
+        background-color: rgba(126, 98, 247, 0.42);
     }
 
 .demo-gallery .justified-gallery > a > img {
@@ -1744,10 +1756,21 @@ button:focus {
 }
 
 
-#footer {
+/*#footer {
     background-size: cover;
     background-position: center center;
     background-image: url(assets/images/footer/bg-footer.png);
+}*/
+
+#footer {
+    background-size: cover;
+    background-position: center center;
+    /*background-image: url(assets/images/footer/bg-footer.png);*/
+    /*background-image: url('assets/images/banner/p-footer.png');*/
+    /*background-image: url('assets/images/banner/dp-800-footer.png');*/
+    /*background-image: url('assets/images/banner/indigo-900-footer.png');*/
+    /*background-image: url('assets/images/banner/indigo-900-footer.png');*/
+    background-image: url('assets/images/banner/p-footer.png');
 }
 
     #footer p, #footer span {
@@ -1820,7 +1843,8 @@ button:focus {
     }
 
 #footer-bottom {
-    background-color: #052d61;
+    /*background-color: #052d61;*/
+    background-color: transparent;
     padding: 15px 0px;
 }
 
@@ -2239,7 +2263,7 @@ button:focus {
     color: #4993d2;
 }
 
-    .blue-txt a , a.blue-txt{
+    .blue-txt a, a.blue-txt {
         text-decoration: none;
     }
 
@@ -2327,7 +2351,8 @@ button:focus {
 }
 
 .gradiant_2 {
-    background: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
+    background: linear-gradient( 135deg, #8a62eb 30%, #ee05cb 100%);
+    /*background-color: #0277BD;*/
 }
 
 .gradiant_3 {
@@ -2605,7 +2630,7 @@ button:focus {
 }
 
 .featured-details p span i {
-    color: #78b8ec;
+    color: #8a62eb;
 }
 
 .pricing-wrap {
@@ -3058,7 +3083,7 @@ button:focus {
     position: relative;
     font-weight: 500;
     margin-top: 0;
-    color: #0268bf;
+    color: #8e4fff;
 }
 
 .terms h3 {
@@ -3161,7 +3186,7 @@ p.large {
 }
 
     .Legality a, .check i, .contact-info a, .wrap-integrations a, .wrap-to-contacts a {
-        color: #08f;
+        color: #8e4fff;
     }
 
 .top-margin {
@@ -3216,12 +3241,12 @@ p.large {
     }
 
         .panel-alt-two .panel-heading .panel-title a:hover {
-            color: #08f;
+            color: #8e4fff;
         }
 
 .panel-alt-two .panel-heading.active .accordion-icon .stacked-icon {
     color: #fff;
-    background: #08f;
+    background: #8e4fff !important;
 }
 
 .accordion-icon {
@@ -3249,7 +3274,7 @@ p.large {
     border-radius: 50%;
     text-align: center;
     color: #fff;
-    background: #f9ce38;
+    background: #d918d1;
 }
 
 .tab-content {
@@ -3421,9 +3446,8 @@ p.large {
 
 .price-line {
     padding: 10px;
-    border: 1px solid #7fbcf6;
     border-radius: 5px;
-    background-color: rgba(0, 131, 255, 0.11);
+    background: linear-gradient( 135deg, #ee05cb 10%, #8a62eb 100%);
 }
 
 .padding-10 {
@@ -3432,8 +3456,14 @@ p.large {
 
 
 .price-line-txt {
-    color: #0075c1;
+    color: #fff;
     font-weight: 700;
+}
+
+.btn-primary {
+    color: #8161f0;
+    background-color: #ffffff;
+    border-color: #2e6da4;
 }
 
 .primary-contact p {
@@ -3468,4 +3498,9 @@ p.large {
     top: 44%;
     color: #fff;
     font-size: 5rem;
+}
+
+a, a:focus, a:hover {
+    color: #8a62eb;
+    text-decoration: none;
 }
