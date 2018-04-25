@@ -26,6 +26,7 @@
     "aos": "^2.2.0",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
+    "emailjs": "^2.0.0",
     "font-awesome": "^4.7.0",
     "font-awesome-animation": "^0.2.0",
     "fractionslider": "^1.0.0",
