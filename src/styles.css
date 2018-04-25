@@ -3096,14 +3096,12 @@ button:focus {
 }
 
 .terms p {
-    font-family: 'Roboto-thin',sans-serif;
-    font-size: 1.5rem;
-    position: relative;
-    font-weight: 500;
-    margin-top: 0;
-    color: #000;
-    line-height: 2;
     text-align: justify;
+    font-size: 16px;
+    margin-bottom: 51px;
+    font-family: 'RobotoSlab-Light', 'Sorts Mill Goudy', sans-serif;
+    line-height: 1.8;
+    font-weight: 300;
 }
 
 .sitemap .list-group-item {
@@ -3503,4 +3501,13 @@ p.large {
 a, a:focus, a:hover {
     color: #8a62eb;
     text-decoration: none;
+}
+
+
+ol li {
+    text-align: justify;
+    font-size: 16px;
+    font-family: 'RobotoSlab-Light', 'Sorts Mill Goudy', sans-serif;
+    line-height: 1.8;
+    font-weight: 300;
 }

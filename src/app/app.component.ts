@@ -119,8 +119,8 @@ export class AppComponent {
 
             if (newsEmail == "") {
                 alert("Please fill the data");
+                $(".atsi-loader").hide();
             } else {
-
 
                 jQuery.ajax({
                     type: "POST",

@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
             {
                 name: 'keywords', content: 'online school management system,school management software india,school management software,best school management software,online school management software,best school management software in india,school management software india,school management system software'
             },
-            { name: 'description', content: 'ATSI Modules are designed to provide specific functionalities to the Online School Management Software to accomplish the routine tasks of any institution in a categorized way and with great ease.' }
+            { name: 'description', content: 'Best Online School Management Software India - A.T.S.I. Modules are designed to provide specific functionalities to the Online School Management Software to accomplish the routine tasks of any institution in a categorized way and with great ease.' }
 
         ]);
 
