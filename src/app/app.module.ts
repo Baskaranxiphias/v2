@@ -42,7 +42,8 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
 import { DisclaimerComponent } from './disclaimer/disclaimer.component';
 import { SitemapComponent } from './sitemap/sitemap.component';
 import { BlogComponent } from './blog/blog.component';
-import { ThankyouComponent } from './thankyou/thankyou.component'
+import { ThankyouComponent } from './thankyou/thankyou.component';
+import { GalleryComponent } from './gallery/gallery.component'
 
 @NgModule({
     declarations: [
@@ -81,6 +82,7 @@ import { ThankyouComponent } from './thankyou/thankyou.component'
         SitemapComponent,
         BlogComponent,
         ThankyouComponent,
+        GalleryComponent,
       
     ],
     imports: [

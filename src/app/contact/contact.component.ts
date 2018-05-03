@@ -45,8 +45,13 @@ export class ContactComponent implements OnInit {
 
                     jQuery.ajax({
                         type: "GET",
-                        url: "https://www.atsi.in/atsi/handlers/BuyNowHandler.ashx",
+                        url: "https://www.atsi.in/handlers/BuyNowHandler.ashx",
                         data: { 'name': name, 'phoneNo': phon, 'email': emil, 'comment1': cmmt },
+                        success: function (data) {
+                            $(".atsi-loader").hide();
+                            $("#otpOption").modal("show", { backdrop: 'static', keyboard: false });
+
+                        }
                     }).fail(function () {
                         $(".atsi-loader").hide();
                         $("#otpOption").modal("show", { backdrop: 'static', keyboard: false });
@@ -68,29 +73,32 @@ export class ContactComponent implements OnInit {
                 else {
                     jQuery.ajax({
                         type: "GET",
-                        url: "https://www.atsi.in/atsi/handlers/BuyNowHandler.ashx",
+                        url: "https://www.atsi.in/handlers/BuyNowHandler.ashx",
 
                         data: { 'otp': otp },
-                        //success: function (data) {
+                        success: function (data) {
 
-                        //    if (data == "") {
+                            if (data == "") {
+                                $(".atsi-loader").hide();
+                                alert("Please Enter Correct OTP");
 
-                        //        alert("Please Enter Correct OTP");
+                                $("#otp2").val(" ");
 
-                        //        $("#otp2").val(" ");
+                            }
+                            else if (data != null) {
+                                $(".atsi-loader").hide();
+                                $("#otpOption").modal("hide");
+                                window.location.href = "#/thankyou";
+                                $("#Name").val("");
+                                $("#Emails").val("");
+                                $("#Mobile").val("");
+                                $("#comment").val("");
+                            }
 
-                        //    }
-                        //    else if (data != null) {
-                        //        debugger;
-                        //        //window.location="http://localhost:63033/thankyou.html";
-                        //        window.location.href = "thankyou.html";
-
-                        //    }
 
 
 
-
-                        //}
+                        }
 
 
                     }).fail(function (data) {
@@ -119,7 +127,7 @@ export class ContactComponent implements OnInit {
 
                 jQuery.ajax({
                     type: "GET",
-                    url: "https://www.atsi.in/atsi/handlers/BuyNowHandler.ashx",
+                    url: "https://www.atsi.in/handlers/BuyNowHandler.ashx",
 
                     data: {},
                     success: function (data) {

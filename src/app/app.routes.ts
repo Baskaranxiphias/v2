@@ -35,6 +35,7 @@ import {PrivacyPolicyComponent}from'./privacy-policy/privacy-policy.component';
 import {DisclaimerComponent}from'./disclaimer/disclaimer.component';
 import {SitemapComponent}from'./sitemap/sitemap.component';
 import {BlogComponent}from'./blog/blog.component';
+import {GalleryComponent}from'./gallery/gallery.component';
 import {ThankyouComponent}from'./thankyou/thankyou.component';
 
 
@@ -73,12 +74,13 @@ export const routes: Routes = [
     { path: 'disclaimer', component: DisclaimerComponent, },
     { path: 'sitemap', component: SitemapComponent, },
     { path: 'blog', component: BlogComponent, },
+    { path: 'gallery', component: GalleryComponent, },
     { path: 'thankyou', component: ThankyouComponent, }
 ];
 
 @NgModule({
     imports: [
-        RouterModule.forRoot(routes)
+        RouterModule.forRoot(routes, { useHash: true })
     ],
     exports: [
         RouterModule

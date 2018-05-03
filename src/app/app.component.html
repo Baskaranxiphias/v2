@@ -4,22 +4,23 @@
             <div class="col-md-6 col-sm-7 col-xs-12">
                 <div class="header-top-left">
                     <ul>
-
-                        <li>
-                            <a href="#">
-                                <span class="ti-headphone-alt"></span>ANY TIME STUDENT INFORMATION - A Product of XIPHIAS
+                        <li id="google_translate_element"></li>
+                        <li class="pull-right">
+                            <a href="https://www.xiphiastec.com/">
+                                <span class="ti-headphone-alt"></span> A Product of XIPHIAS
                             </a>
                         </li>
+                      
                     </ul>
                 </div>
             </div>
             <div class="col-md-6 col-sm-5 col-xs-12">
                 <div class="header-top-right">
                     <ul>
-                        <li><a href="#"><span class="ti-comments"></span>Our Certification : ISO / IEC 27001:2005 </a></li>
-                        <li class="social pull-right"><a href="https://www.facebook.com/XIPHIAS.IN"> <img src="assets/images/social-icon/facebook.svg" class="width-30" /> </a></li>
-                        <li class="social pull-right"><a href="https://twitter.com/XIPHIAS0101"><img src="assets/images/social-icon/twitter.svg" class="width-30" /></a></li>
-                        <li class="social pull-right"><a href="https://www.linkedin.com/company/xiphias-software-technologies-pvt-ltd"><img src="assets/images/social-icon/linkedin.svg" class="width-30" /></a></li>
+                        <li><a href="https://www.xiphiastec.com/iso.html"><span class="ti-comments"></span>Our Certification : ISO / IEC 27001:2005 </a></li>
+                        <li class="social pull-right"><a href="https://www.facebook.com/XIPHIAS.IN"> <img src="assets/images/social-icon/facebook.svg" class="width-25" /> </a></li>
+                        <li class="social pull-right"><a href="https://twitter.com/XIPHIAS0101"><img src="assets/images/social-icon/twitter.svg" class="width-25" /></a></li>
+                        <li class="social pull-right"><a href="https://www.linkedin.com/company/xiphias-software-technologies-pvt-ltd"><img src="assets/images/social-icon/linkedin.svg" class="width-25" /></a></li>
 
                     </ul>
                 </div>
@@ -54,16 +55,18 @@
                 <li><a routerLink="/clients" routerLinkActive="active">Installation</a></li>
                 <li><a routerLink="/testimonials" routerLinkActive="active">Testimonials</a></li>
                 <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
-                <li><a href="https://www.atsi.in/user/login" target="_blank">Login</a></li>
+                <li><a href="http://atsi.in/erp/user/login" target="_blank">Login</a></li>
                 <li><a href="#" class="search-ic" data-toggle="modal" data-target="#searchOption"><i class="fa fa-search header-search-icon"></i></a></li>
+                <!--<li id="google_translate_element"></li>-->
             </ul>
         </div>
     </div>
 </nav>
 
 <router-outlet (activate)="onActivate($event)"></router-outlet>
+
 <div class="atsi-loader">
-    <div><i class="fa fa-spinner fa-spin atsi-loader-icon " aria-hidden="true"></i></div> 
+    <div><i class="fa fa-spinner fa-spin atsi-loader-icon " aria-hidden="true"></i></div>
 </div>
 <section id="footer">
     <div class="container">
@@ -222,6 +225,7 @@
                         <a routerLink="/privacyPolicy">Privacy Policy</a>&nbsp; | &nbsp;
                         <a routerLink="/disclaimer">Disclaimer</a>&nbsp; | &nbsp;
                         <a routerLink="/sitemap" title="Kiosk Solution Providers">Sitemap</a>&nbsp; | &nbsp;
+                        <a routerLink="/gallery" title="Kiosk Solution Providers">Gallery</a> &nbsp; | &nbsp;
                         <a routerLink="/blog" title="Kiosk Solution Providers">Blog</a>
                     </div>
                     <div class="pull-right">
@@ -234,8 +238,7 @@
 </section>
 
 <div id="searchOption" class="modal fade" role="dialog">
-    <div class="modal-dialog width-75">
-        <!-- Modal content-->
+    <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -266,7 +269,7 @@
 
             </div>
             <div class="modal-footer">
-               <!-- <button type="button" class="btn btn-danger otp-btn-size" id="resendOtp">Resend</button>-->
+                <!-- <button type="button" class="btn btn-danger otp-btn-size" id="resendOtp">Resend</button>-->
                 <button type="button" class="btn btn-primary otp-btn-size" id="confirmOtp">Submit</button>
             </div>
         </div>

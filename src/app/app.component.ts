@@ -65,6 +65,21 @@ export class AppComponent {
 
 
 
+        $(document).ready(function () {
+            var urlhttp = location.protocol;
+            var repurl = location.host;
+            if (urlhttp == "http:") {
+                window.location.href = "https://" + repurl;
+            }
+
+            if (repurl == "atsi.in") {
+                window.location.href = "https://www." + repurl;
+            }
+
+        });
+
+
+
 
 
 
@@ -124,22 +139,24 @@ export class AppComponent {
 
                 jQuery.ajax({
                     type: "POST",
-                    url: 'https://www.atsi.in/atsi/handlers/newletterfrm.ashx',
+                    url: 'https://www.atsi.in/handlers/newletterfrm.ashx',
                     data: { 'email': newsEmail },
                     success: function (data) {
                         $(".atsi-loader").hide();
                         window.location.href = "#/thankyou";
+                        $("#newsEmail").val("");
                     }
+                }).fail(function () {
+                    $(".atsi-loader").hide();
+                    window.location.href = "#/thankyou";
+                    $("#newsEmail").val("");
+
                 })
 
             }
 
 
-            //    .fail(function () {
-            //    $(".atsi-loader").hide();
-            //    window.location.href = "#/thankyou";
 
-            //})
         });
 
 
@@ -163,8 +180,12 @@ export class AppComponent {
 
                     jQuery.ajax({
                         type: "GET",
-                        url: "https://www.atsi.in/atsi/handlers/BuyNowHandler.ashx",
+                        url: "https://www.atsi.in/handlers/BuyNowHandler.ashx",
                         data: { 'name': name, 'phoneNo': phon, 'email': emil, 'comment1': cmmt },
+                        success: function (data) {
+                            $(".atsi-loader").hide();
+                            $("#otpOption").modal("show", { backdrop: 'static', keyboard: false });
+                        }
                     }).fail(function () {
                         $(".atsi-loader").hide();
                         $("#otpOption").modal("show", { backdrop: 'static', keyboard: false });
@@ -186,7 +207,7 @@ export class AppComponent {
                 else {
                     jQuery.ajax({
                         type: "GET",
-                        url: "https://www.atsi.in/atsi/handlers/BuyNowHandler.ashx",
+                        url: "https://www.atsi.in/handlers/BuyNowHandler.ashx",
 
                         data: { 'otp': otp },
                         success: function (data) {
@@ -202,7 +223,10 @@ export class AppComponent {
                                 $(".atsi-loader").hide();
                                 $("#otpOption").modal("hide");
                                 window.location.href = "#/thankyou";
-
+                                $("#Name").val("");
+                                $("#Emails").val("");
+                                $("#Mobile").val("");
+                                $("#comment").val("");
                             }
 
                         }
@@ -235,7 +259,7 @@ export class AppComponent {
 
                 jQuery.ajax({
                     type: "GET",
-                    url: "https://www.atsi.in/atsi/handlers/BuyNowHandler.ashx",
+                    url: "https://www.atsi.in//handlers/BuyNowHandler.ashx",
 
                     data: {},
                     success: function (data) {
